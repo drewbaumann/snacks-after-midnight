@@ -7,7 +7,7 @@ export default function Privacy() {
 
 <p>At our company, we prioritize your privacy and aim to collect the least amount of personal data from you as possible. We only collect information when necessary for the functionality of our website and apps. Whenever feasible, we provide you with the option to opt out of data collection. Further details regarding the data we collect and the reasons behind it are outlined in the following sections.</p>
 
-<p>Snacks After Midnight (“us”, “we”, or “our”) operates the https://snacksaftermidnight.com website and the Chroma - Cinema For Plex application (“Chroma”, or the “Service”).</p>
+<p>Snacks After Midnight (“us”, “we”, or “our”) operates the https://snacksaftermidnight.com website and the Chroma - Spatial Cinema application (“Chroma”, or the “Service”).</p>
 
 <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>
 
