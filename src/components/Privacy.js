@@ -1,8 +1,8 @@
 export default function Privacy() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-white overflow-y-auto p-8">
+    <div className="flex flex-col items-center text-black overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Privacy Policy</h1>
-      <div className="prose prose-invert max-w-3xl">
+      <div className="prose max-w-3xl bg-white p-8 rounded-lg">
         <p><em>Updated: March 29, 2024</em></p>
 
 <p>At our company, we prioritize your privacy and aim to collect the least amount of personal data from you as possible. We only collect information when necessary for the functionality of our website and apps. Whenever feasible, we provide you with the option to opt out of data collection. Further details regarding the data we collect and the reasons behind it are outlined in the following sections.</p>
