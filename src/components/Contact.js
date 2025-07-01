@@ -13,7 +13,7 @@ export default function Contact() {
       return;
     }
     setError('');
-    window.location.href = `mailto:drew@snacksaftermidnight.com?subject=Contact Form&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    window.location.href = `mailto:drew@snacksaftermidnight.com?subject=Contact Form&body=${message}%0D%0A%0D%0A--%0D%0A${name}%0D%0A${email}`;
   };
 
   return (
