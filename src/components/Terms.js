@@ -3,7 +3,7 @@ export default function Terms() {
     <div className="flex flex-col items-center text-black overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Terms of Service</h1>
       <div className="prose max-w-3xl bg-white p-8 rounded-lg">
-        <p><em>Updated: March 29, 2024</em></p>
+        <p><em>Updated: July 1, 2025</em></p>
 
 <p><strong>These Terms of Service (“Terms”, “Terms of Service”, “Agreement”, or “Service Agreement”) govern your relationship with the services (the “Service”) operated by Snacks After Midnight (“Snacks After Midnight”, “us”, “we”, or “our”). Please read this carefully as you will be legally bound by these terms.</strong></p>
 
