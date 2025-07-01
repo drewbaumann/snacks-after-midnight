@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/snacks-after-midnight/static/css/main.42f8fddd.css",
+    "main.js": "/snacks-after-midnight/static/js/main.475068f7.js",
+    "static/js/453.4bdea1f2.chunk.js": "/snacks-after-midnight/static/js/453.4bdea1f2.chunk.js",
+    "index.html": "/snacks-after-midnight/index.html",
+    "main.42f8fddd.css.map": "/snacks-after-midnight/static/css/main.42f8fddd.css.map",
+    "main.475068f7.js.map": "/snacks-after-midnight/static/js/main.475068f7.js.map",
+    "453.4bdea1f2.chunk.js.map": "/snacks-after-midnight/static/js/453.4bdea1f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42f8fddd.css",
+    "static/js/main.475068f7.js"
+  ]
+}
