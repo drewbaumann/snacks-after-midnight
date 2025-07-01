@@ -27,6 +27,8 @@ jobs:
         run: |
           npm cache clean --force
           npm install
+      - name: Install @tailwindcss/typography explicitly
+        run: npm install @tailwindcss/typography
 
       - name: Build
         run: npm run build
