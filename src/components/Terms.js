@@ -121,12 +121,7 @@ export default function Terms() {
 
 <h2 id="contact-us">Contact Us</h2>
 
-<p>If you have any questions about these Terms, you can contact us via <a href="mailto:drew@snacksaftermidnight.com">email</a> or via mail at:</p>
-
-<p>1653 7TH ST<br />
-PO BOX 481<br />
-SANTA MONICA, CA 90401<br />
-USA</p>
+<p>If you have any questions about these Terms, you can contact us via <a href="mailto:drew@snacksaftermidnight.com">email</a>.</p>
       </div>
     </div>
   );
