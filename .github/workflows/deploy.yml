@@ -22,16 +22,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: |
-          npm cache clean --force
-          npm install
-      - name: Install @tailwindcss/typography explicitly
-        run: npm install @tailwindcss/typography
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
