@@ -20,7 +20,7 @@ export default function Contact() {
     <div className="flex flex-col items-center text-white overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Contact Us</h1>
       {error && <p className="text-red-500">{error}</p>}
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full px-4">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full px-4 sm:w-2/3 md:w-1/2 lg:w-1/3">
         <input
           type="text"
           placeholder="Name"
