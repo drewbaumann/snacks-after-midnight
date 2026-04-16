@@ -3,7 +3,7 @@ export default function Terms() {
     <div className="flex flex-col items-center text-black overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Terms of Service</h1>
       <div className="prose max-w-3xl bg-white p-8 rounded-lg">
-        <p><em>Updated: July 1, 2025</em></p>
+        <p><em>Updated: April 15, 2026</em></p>
 
 <p><strong>These Terms of Service (“Terms”, “Terms of Service”, “Agreement”, or “Service Agreement”) govern your relationship with the services (the “Service”) operated by Snacks After Midnight (“Snacks After Midnight”, “us”, “we”, or “our”). Please read this carefully as you will be legally bound by these terms.</strong></p>
 
@@ -13,7 +13,7 @@ export default function Terms() {
 
 <h2 id="description-of-service">Description of Service</h2>
 
-<p>The “Service” means (a) the snacksaftermidnight.com website (the “Site”), and (b) all software (including the Software, as defined below), applications, data, text, images, and other content made available by or on behalf of Snacks After Midnight. Any modifications to the Service are also subject to these Terms. Snacks After Midnight reserves the right to modify or discontinue the Service or any feature or functionality thereof at any time without notice. All rights, title and interest in and to the Service will remain with and belong exclusively to Snacks After Midnight.</p>
+<p>The “Service” means (a) the snacksaftermidnight.com website (the “Site”), (b) the Chroma - Spatial Cinema application, (c) the CrossPort companion application for the CrossPoint X4 e-reader, and (d) all software (including the Software, as defined below), applications, data, text, images, and other content made available by or on behalf of Snacks After Midnight. Any modifications to the Service are also subject to these Terms. Snacks After Midnight reserves the right to modify or discontinue the Service or any feature or functionality thereof at any time without notice. All rights, title and interest in and to the Service will remain with and belong exclusively to Snacks After Midnight.</p>
 
 <h2 id="subscriptions">Subscriptions</h2>
 
