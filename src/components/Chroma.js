@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import FoilTicket from './FoilTicket';
 import './Chroma.css';
 
 const APP_STORE = 'https://apps.apple.com/us/app/chroma-spatial-cinema/id6478800800';
@@ -22,58 +22,6 @@ function jump(e) {
   if (!target) return;
   e.preventDefault();
   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-// Foil treatment from the design system: a specular sheen and a faint
-// iridescent wash masked to the ticket's own silhouette. An idle rake keeps
-// it alive; the pointer (or device tilt, where the browser allows it
-// without a permission prompt) drives it directly.
-function FoilTicket({ src, alt }) {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
-    const sheen = el.querySelector('.sheen');
-    const iris = el.querySelector('.iris');
-    const light = (x, y) => {
-      el.classList.add('live');
-      el.style.transform = `perspective(1000px) rotateY(${(x * 10).toFixed(2)}deg) rotateX(${(-y * 10).toFixed(2)}deg)`;
-      sheen.style.backgroundPosition = `${(50 - x * 130).toFixed(1)}% 0`;
-      iris.style.opacity = String(0.12 + Math.abs(x) * 0.3);
-    };
-    const rest = () => {
-      el.classList.remove('live');
-      el.style.transform = '';
-      sheen.style.backgroundPosition = '';
-      iris.style.opacity = '';
-    };
-    const onMove = (e) => {
-      const r = el.getBoundingClientRect();
-      light((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
-    };
-    el.addEventListener('pointermove', onMove);
-    el.addEventListener('pointerleave', rest);
-    let onTilt = null;
-    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission !== 'function') {
-      onTilt = (e) => {
-        if (e.gamma == null || e.beta == null) return;
-        light(Math.max(-0.5, Math.min(0.5, e.gamma / 60)), Math.max(-0.5, Math.min(0.5, (e.beta - 45) / 90)));
-      };
-      window.addEventListener('deviceorientation', onTilt);
-    }
-    return () => {
-      el.removeEventListener('pointermove', onMove);
-      el.removeEventListener('pointerleave', rest);
-      if (onTilt) window.removeEventListener('deviceorientation', onTilt);
-    };
-  }, []);
-  return (
-    <div className="foil" ref={ref} style={{ '--ticket': `url(${src})` }}>
-      <img className="ticket" src={src} alt={alt} />
-      <div className="sheen" aria-hidden="true" />
-      <div className="iris" aria-hidden="true" />
-    </div>
-  );
 }
 
 function CMark() {
