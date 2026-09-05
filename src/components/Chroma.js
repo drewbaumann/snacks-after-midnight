@@ -45,7 +45,7 @@ export default function Chroma() {
         <div className="wrap">
           <div className="eyebrow beam">CHROMA 2.0 &middot; NOW ON APPLE VISION PRO</div>
           <h1>Your library, projected properly.</h1>
-          <p className="lede">Plex, Jellyfin and Emby, played the way they were graded. 4K, Dolby Vision and Atmos in a theater that exists only in your room.</p>
+          <p className="lede">Plex, Jellyfin, Emby and local videos, played in all their glory. 4K, Dolby Vision and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
             <a href={APP_STORE} className="btn fill">Get Chroma for Vision Pro</a>
             <a href="#next" className="btn glass">iPhone and iPad are next</a>
