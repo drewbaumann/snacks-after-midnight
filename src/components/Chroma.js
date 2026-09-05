@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Chroma.css';
 
@@ -12,6 +13,68 @@ const whatsNew = [
   ['Transcribe', 'On-device live subtitles for videos that have none.'],
   ['Downloads that remember', 'Offline playback resumes where you stopped and reports back to your server when you’re online again.'],
 ];
+
+// HashRouter owns the URL fragment, so a plain "#pass" link would navigate to
+// a /pass route instead of scrolling. Scroll by id and leave the URL alone.
+function jump(e) {
+  const id = e.currentTarget.getAttribute('href').slice(1);
+  const target = document.getElementById(id);
+  if (!target) return;
+  e.preventDefault();
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Foil treatment from the design system: a specular sheen and a faint
+// iridescent wash masked to the ticket's own silhouette. An idle rake keeps
+// it alive; the pointer (or device tilt, where the browser allows it
+// without a permission prompt) drives it directly.
+function FoilTicket({ src, alt }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+    const sheen = el.querySelector('.sheen');
+    const iris = el.querySelector('.iris');
+    const light = (x, y) => {
+      el.classList.add('live');
+      el.style.transform = `perspective(1000px) rotateY(${(x * 10).toFixed(2)}deg) rotateX(${(-y * 10).toFixed(2)}deg)`;
+      sheen.style.backgroundPosition = `${(50 - x * 130).toFixed(1)}% 0`;
+      iris.style.opacity = String(0.12 + Math.abs(x) * 0.3);
+    };
+    const rest = () => {
+      el.classList.remove('live');
+      el.style.transform = '';
+      sheen.style.backgroundPosition = '';
+      iris.style.opacity = '';
+    };
+    const onMove = (e) => {
+      const r = el.getBoundingClientRect();
+      light((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
+    };
+    el.addEventListener('pointermove', onMove);
+    el.addEventListener('pointerleave', rest);
+    let onTilt = null;
+    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission !== 'function') {
+      onTilt = (e) => {
+        if (e.gamma == null || e.beta == null) return;
+        light(Math.max(-0.5, Math.min(0.5, e.gamma / 60)), Math.max(-0.5, Math.min(0.5, (e.beta - 45) / 90)));
+      };
+      window.addEventListener('deviceorientation', onTilt);
+    }
+    return () => {
+      el.removeEventListener('pointermove', onMove);
+      el.removeEventListener('pointerleave', rest);
+      if (onTilt) window.removeEventListener('deviceorientation', onTilt);
+    };
+  }, []);
+  return (
+    <div className="foil" ref={ref} style={{ '--ticket': `url(${src})` }}>
+      <img className="ticket" src={src} alt={alt} />
+      <div className="sheen" aria-hidden="true" />
+      <div className="iris" aria-hidden="true" />
+    </div>
+  );
+}
 
 function CMark() {
   return (
@@ -29,11 +92,11 @@ export default function Chroma() {
     <div className="chroma">
       <header className="nav">
         <div className="wrap">
-          <a href="#top" className="wordmark">Chroma</a>
+          <a href="#top" onClick={jump} className="wordmark">Chroma</a>
           <nav className="nav-links">
-            <a href="#new" className="hide-sm">What&rsquo;s new</a>
-            <a href="#cinema" className="hide-sm">Cinema</a>
-            <a href="#pass">Chroma Pass</a>
+            <a href="#new" onClick={jump} className="hide-sm">What&rsquo;s new</a>
+            <a href="#cinema" onClick={jump} className="hide-sm">Cinema</a>
+            <a href="#pass" onClick={jump}>Chroma Pass</a>
             <a href={APP_STORE} className="primary">Download</a>
           </nav>
         </div>
@@ -48,7 +111,7 @@ export default function Chroma() {
           <p className="lede">Plex, Jellyfin, Emby and local videos, played in all their glory. 4K, Dolby Vision and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
             <a href={APP_STORE} className="btn fill">Get Chroma for Vision Pro</a>
-            <a href="#next" className="btn glass">iPhone and iPad are next</a>
+            <a href="#next" onClick={jump} className="btn glass">iPhone and iPad are next</a>
           </div>
           <div className="fine">Free to try. Chroma Pass unlocks unlimited watching.</div>
         </div>
@@ -125,7 +188,7 @@ export default function Chroma() {
       <section id="pass" className="block">
         <div className="wrap">
           <div className="panel pass">
-            <img className="ticket" src={`${base}/chroma/pass.png`} alt="The gold Chroma Pass ticket" />
+            <FoilTicket src={`${base}/chroma/pass.png`} alt="The gold Chroma Pass ticket" />
             <h2>Chroma Pass</h2>
             <p className="body">Chroma plays five minutes of anything for free. Chroma Pass removes the limit and keeps your playback position in sync with your server.</p>
             <div className="tiers">
