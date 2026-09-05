@@ -53,9 +53,14 @@ export default function Chroma() {
       <section id="top" className="hero">
         <div className="starburst" />
         <div className="iris-glow" />
+        <div className="wrap hero-shot">
+          <div className="frame">
+            <img src={`${base}/chroma/hero-room.jpg`} alt="Chroma's episode page for Barry, floating in an immersive theater on Apple Vision Pro" />
+          </div>
+        </div>
         <div className="wrap">
-          <div className="eyebrow beam">CHROMA 2.0 &middot; NOW ON APPLE VISION PRO</div>
-          <h1>Your library, projected properly.</h1>
+          <div className="tag">Chroma 2.0 is out now on Apple Vision Pro</div>
+          <h1>Your media, cinema-grade.</h1>
           <p className="lede">Plex, Jellyfin, Emby and local videos, played in all their glory. 4K, Dolby Vision and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
             <a href={APP_STORE} className="btn fill">Get Chroma for Vision Pro</a>
@@ -63,17 +68,11 @@ export default function Chroma() {
           </div>
           <div className="fine">Free to try. Chroma Pass unlocks unlimited watching.</div>
         </div>
-        <div className="wrap hero-shot">
-          <div className="frame">
-            <img src={`${base}/chroma/hero-room.jpg`} alt="Chroma playing a film on a wall-sized virtual screen in a living room, seen through Apple Vision Pro" />
-          </div>
-        </div>
       </section>
 
       <section id="new" className="block first">
         <div className="wrap">
-          <div className="eyebrow">WHAT&rsquo;S NEW IN 2.0</div>
-          <h2>The biggest update yet.</h2>
+          <h2>What&rsquo;s new in 2.0</h2>
           <div className="grid3">
             {whatsNew.map(([title, text]) => (
               <div className="card" key={title}>
@@ -92,7 +91,6 @@ export default function Chroma() {
               <img src={`${base}/chroma/cinema.jpg`} alt="An immersive Chroma theater with a lit stage on screen, subtitles, and the transport bar" />
             </div>
             <div>
-              <div className="eyebrow">CINEMA</div>
               <h2>A theater built around you.</h2>
               <p className="body">Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR and multichannel audio come through as the file was made.</p>
             </div>
@@ -104,13 +102,12 @@ export default function Chroma() {
         <div className="wrap">
           <div className="split flip">
             <div>
-              <div className="eyebrow">LIBRARY</div>
               <h2>The file, untouched.</h2>
               <p className="body">Direct play for the formats servers usually transcode, MKV included. Style your subtitles, choose audio tracks, nudge caption timing, and skip intros and credits. Home Screen widgets and deep links go straight into playback.</p>
               <div className="note">Skipping intros and credits requires Plex Pass on the library owner&rsquo;s server.</div>
             </div>
             <div className="shot">
-              <img src={`${base}/chroma/library.jpg`} alt="Chroma's Home view floating over a dining table, with a Continue Watching row of posters" />
+              <img src={`${base}/chroma/library.jpg`} alt="Chroma's Home view on iPad, with a sidebar of libraries and a Continue Watching row" />
             </div>
           </div>
         </div>
@@ -121,7 +118,6 @@ export default function Chroma() {
           <div className="panel next">
             <div className="split">
               <div>
-                <div className="eyebrow beam" style={{ marginBottom: 12 }}>COMING SOON</div>
                 <h2>Next: iPhone and iPad.</h2>
                 <p className="body">The same libraries and the same Chroma Pass, on the screen in your pocket. Picture in Picture, downloads, Transcribe, and playback that picks up right where your Vision Pro left off.</p>
               </div>
@@ -139,12 +135,7 @@ export default function Chroma() {
             <FoilTicket src={`${base}/chroma/pass.png`} alt="The gold Chroma Pass ticket" />
             <h2>Chroma Pass</h2>
             <p className="body">Chroma plays five minutes of anything for free. Chroma Pass removes the limit and keeps your playback position in sync with your server.</p>
-            <div className="tiers">
-              <span className="tier">Monthly</span>
-              <span className="tier">Yearly</span>
-              <span className="tier gold">Lifetime</span>
-            </div>
-            <div className="note">Subscriptions start with a free trial. Lifetime is a one-time purchase. Current pricing is shown in the app.</div>
+            <p className="body">Monthly or yearly with a free trial, or a one-time Lifetime purchase. Current pricing is in the app.</p>
           </div>
         </div>
       </section>
