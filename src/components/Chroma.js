@@ -26,11 +26,11 @@ function jump(e) {
 
 function CMark() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5F5F7" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
-      <path d="M19.5 6.2A10 10 0 1 0 19.5 17.8" />
-      <path d="M17.3 8.2A7 7 0 1 0 17.3 15.8" />
-      <path d="M15.1 10.2A4 4 0 1 0 15.1 13.8" />
-      <path d="M13 12h-1" />
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#F5F5F7" strokeLinecap="butt" aria-hidden="true">
+      <path d="M25.12 6.78A13.26 13.26 0 1 0 25.12 21.22" stroke-width="1.48" />
+      <path d="M23.26 7.99A11.04 11.04 0 1 0 23.26 20.01" stroke-width="1.52" />
+      <path d="M21.42 9.18A8.85 8.85 0 1 0 21.42 18.82" stroke-width="1.52" />
+      <path d="M19.58 10.38A6.65 6.65 0 1 0 19.58 17.62" stroke-width="1.52" />
     </svg>
   );
 }
