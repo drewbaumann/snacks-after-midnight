@@ -1,48 +1,31 @@
-import { useState } from 'react';
+// Same Google Form as drewbaumann.com/contact so every submission lands in the
+// one response sheet. The previous mailto: form did nothing for visitors
+// without a configured mail client.
+const FORM_ID = '1FAIpQLScXc9FICd7ZyKmuVK9GoLHshyjfkgF8GdiGU8f1Bi5sskK17g';
+const FORM_URL = `https://docs.google.com/forms/d/e/${FORM_ID}/viewform?embedded=true`;
 
 export default function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!name || !email || !message) {
-      setError('All fields are required');
-      return;
-    }
-    setError('');
-    window.location.href = `mailto:drew@snacksaftermidnight.com?subject=Contact Form&body=${message}%0D%0A%0D%0A--%0D%0A${name}%0D%0A${email}`;
-  };
-
   return (
     <div className="flex flex-col items-center text-white overflow-y-auto p-8 pt-20">
-      <h1 className="text-4xl mb-8">Contact Us</h1>
-      {error && <p className="text-red-500">{error}</p>}
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full px-4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-        <input
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="p-2 rounded bg-gray-800"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="p-2 rounded bg-gray-800"
-        />
-        <textarea
-          placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="p-2 rounded bg-gray-800 h-32"
-        />
-        <button type="submit" className="p-2 rounded bg-blue-500 hover:bg-blue-700">Submit</button>
-      </form>
+      <h1 className="text-4xl mb-2">Contact Us</h1>
+      <p className="text-gray-300 mb-6 text-center">
+        Questions, bug reports, or ideas for Chroma and our other apps. We read everything.
+      </p>
+      <iframe
+        title="Contact form"
+        src={FORM_URL}
+        className="w-full max-w-2xl rounded bg-white"
+        style={{ height: 1142, border: 0 }}
+        loading="lazy"
+      >
+        Loading…
+      </iframe>
+      <p className="text-gray-400 text-sm mt-6 text-center">
+        Prefer email?{' '}
+        <a href="mailto:drew@snacksaftermidnight.com" className="underline hover:text-white">
+          drew@snacksaftermidnight.com
+        </a>
+      </p>
     </div>
   );
 }
