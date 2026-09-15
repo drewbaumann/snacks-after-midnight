@@ -3,7 +3,7 @@ export default function Terms() {
     <div className="flex flex-col items-center text-black overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Terms of Service</h1>
       <div className="prose max-w-3xl bg-white p-8 rounded-lg">
-        <p><em>Updated: April 15, 2026</em></p>
+        <p><em>Updated: September 14, 2026</em></p>
 
 <p><strong>These Terms of Service (“Terms”, “Terms of Service”, “Agreement”, or “Service Agreement”) govern your relationship with the services (the “Service”) operated by Snacks After Midnight (“Snacks After Midnight”, “us”, “we”, or “our”). Please read this carefully as you will be legally bound by these terms.</strong></p>
 
@@ -14,6 +14,16 @@ export default function Terms() {
 <h2 id="description-of-service">Description of Service</h2>
 
 <p>The “Service” means (a) the snacksaftermidnight.com website (the “Site”), (b) the Chroma - Spatial Cinema application, (c) the CrossPort companion application for the CrossPoint X4 e-reader, and (d) all software (including the Software, as defined below), applications, data, text, images, and other content made available by or on behalf of Snacks After Midnight. Any modifications to the Service are also subject to these Terms. Snacks After Midnight reserves the right to modify or discontinue the Service or any feature or functionality thereof at any time without notice. All rights, title and interest in and to the Service will remain with and belong exclusively to Snacks After Midnight.</p>
+
+<h2 id="free-use">Free Use and the Preview Limit</h2>
+
+<p>Chroma may be used without a purchase. Without Chroma Pass, playback of a title is limited to a preview period, after which playback stops and you are invited to purchase. The rest of the app, including adding your servers and browsing your libraries, remains available.</p>
+
+<h2 id="chroma-pass">Chroma Pass</h2>
+
+<p>Chroma Pass unlocks the full version of Chroma. It is offered as an auto-renewing subscription, billed through the App Store on the recurring Billing Cycle you choose, or as a one-time purchase that does not renew. The options available, and their prices, are shown in the app and on the App Store listing.</p>
+
+<p>A one-time purchase is charged once and is not a subscription: it does not renew, and there is nothing to cancel. The subscription terms below apply only to the auto-renewing options.</p>
 
 <h2 id="subscriptions">Subscriptions</h2>
 
@@ -118,6 +128,16 @@ export default function Terms() {
 <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will make reasonable efforts to provide at least 30 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
 
 <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, in whole or in part, please stop using the website and the Service.</p>
+
+<h2 id="trademarks">Trademarks</h2>
+
+<p>Chroma is an independent application. It is not produced, endorsed, or supported by Plex, the Jellyfin project, or Emby.</p>
+
+<p>Plex, the Plex Play logo, and Plex Media Server are trademarks of Plex and are used under a license.</p>
+
+<p>Jellyfin is a trademark of the Jellyfin project. Chroma is an independent client and uses the name only to indicate interoperability.</p>
+
+<p>Emby is a trademark of Emby LLC. Chroma is an independent client and uses the name only to indicate interoperability.</p>
 
 <h2 id="contact-us">Contact Us</h2>
 
