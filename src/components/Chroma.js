@@ -6,7 +6,7 @@ const APP_STORE = 'https://apps.apple.com/us/app/chroma-spatial-cinema/id6478800
 const base = process.env.PUBLIC_URL || '';
 
 const whatsNew = [
-  ['Jellyfin and Emby', 'They join Plex. Multiple servers, all in one sidebar.'],
+  ['Jellyfin and Emby', 'They join Plex. Multiple servers, one shared toolbar.'],
   ['One library, every server', 'Search across everything you own. Genre chips, trailers, extras and cast on richer detail pages.'],
   ['AI 3D', 'Watch 2D titles with real depth, on device.'],
   ['VR180, VR360 and spatial video', 'Immersive formats play natively, alongside MV-HEVC spatial video.'],
@@ -59,12 +59,12 @@ export default function Chroma() {
           </div>
         </div>
         <div className="wrap">
-          <div className="tag">Chroma 2.0 is out now on Apple Vision Pro</div>
+          <div className="tag">Chroma 2 is out now on Apple Vision Pro, iPhone and iPad</div>
           <h1>Your media, cinema-grade.</h1>
           <p className="lede">Plex, Jellyfin, Emby and local videos, played in all their glory. 4K, Dolby Vision and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
-            <a href={APP_STORE} className="btn fill">Get Chroma for Vision Pro</a>
-            <a href="#next" onClick={jump} className="btn glass">iPhone and iPad are next</a>
+            <a href={APP_STORE} className="btn fill">Get Chroma on the App Store</a>
+            <Link to="/news/chroma-2" className="btn glass">Read what&rsquo;s new</Link>
           </div>
           <div className="fine">Free to try. Chroma Pass unlocks unlimited watching.</div>
         </div>
@@ -72,7 +72,7 @@ export default function Chroma() {
 
       <section id="new" className="block first">
         <div className="wrap">
-          <h2>What&rsquo;s new in 2.0</h2>
+          <h2>What&rsquo;s new in Chroma 2</h2>
           <div className="grid3">
             {whatsNew.map(([title, text]) => (
               <div className="card" key={title}>
@@ -107,7 +107,7 @@ export default function Chroma() {
               <div className="note">Skipping intros and credits requires Plex Pass on the library owner&rsquo;s server.</div>
             </div>
             <div className="shot">
-              <img src={`${base}/chroma/library.jpg`} alt="Chroma's Home view on iPad, with a sidebar of libraries and a Continue Watching row" />
+              <img src={`${base}/chroma/library.jpg`} alt="Chroma's Home view on iPad, with a Continue Watching row and Recently Added shelves" />
             </div>
           </div>
         </div>
@@ -118,8 +118,9 @@ export default function Chroma() {
           <div className="panel next">
             <div className="split">
               <div>
-                <h2>Next: iPhone and iPad.</h2>
+                <h2>Now on iPhone and iPad.</h2>
                 <p className="body">The same libraries and the same Chroma Pass, on the screen in your pocket. Picture in Picture, downloads, Transcribe, and playback that picks up right where your Vision Pro left off.</p>
+                <div className="cta-row"><a href={APP_STORE} className="btn fill">Get Chroma for iPhone and iPad</a></div>
               </div>
               <div className="phone-wrap">
                 <img className="phone" src={`${base}/chroma/iphone.jpg`} alt="Chroma's Home screen on iPhone" />

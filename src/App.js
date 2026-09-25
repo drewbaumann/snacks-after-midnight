@@ -5,6 +5,7 @@ import Chroma from './components/Chroma';
 import Contact from './components/Contact';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
+import { NewsList, NewsPost } from './components/News';
 import ThreeBackground from './components/ThreeBackground';
 
 // The Chroma page brings its own background and navigation; every other
@@ -22,6 +23,8 @@ function Shell() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/news" element={<NewsList />} />
+        <Route path="/news/:slug" element={<NewsPost />} />
       </Routes>
     </>
   );
