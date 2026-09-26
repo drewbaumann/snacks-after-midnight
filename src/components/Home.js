@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 const CROSSPORT = 'https://apps.apple.com/us/app/crossport/id6761747300';
 
@@ -13,8 +12,8 @@ export default function Home() {
       </div>
 
       <div className="flex flex-wrap items-stretch justify-center gap-8 w-full">
-        <Link
-          to="/chroma"
+        <a
+          href="/chroma/"
           className={`${card} -rotate-2`}
           style={{ background: 'rgba(13,13,20,0.82)', boxShadow: '0 24px 60px rgba(138,43,226,0.25)' }}
         >
@@ -27,7 +26,7 @@ export default function Home() {
           </div>
           <p className="mt-2.5 text-[17px] leading-snug text-white/75">Your Plex, Jellyfin and Emby libraries in a cinema built around you. On Apple Vision Pro, iPhone and iPad.</p>
           <div className="mt-4 text-[15px] font-semibold text-cyan-400">See what&rsquo;s new →</div>
-        </Link>
+        </a>
 
         <a
           href={CROSSPORT}

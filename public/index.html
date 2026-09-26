@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Monoton&display=swap" rel="stylesheet">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Safari's Smart App Banner for the app a page is about. Safari reads the tag once, while
+         the page loads, and every route is this one document, so it's written here from the
+         address as the head is parsed; the home page shows both apps and gets none. -->
+    <script>
+      (function () {
+        var apps = { '#/chroma': '6478800800', '#/crossport': '6761747300' };
+        var id = apps[(window.location.hash.split('?')[0] || '').replace(/\/$/, '')];
+        if (id) document.write('<meta name="apple-itunes-app" content="app-id=' + id + '">');
+      })();
+    </script>
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
