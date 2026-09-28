@@ -24,7 +24,7 @@ export default function Home() {
           >
             Chroma
           </div>
-          <p className="mt-2.5 text-[17px] leading-snug text-white/75">Your Plex, Jellyfin and Emby libraries in a cinema built around you. On Apple Vision Pro, iPhone and iPad.</p>
+          <p className="mt-2.5 text-[17px] leading-snug text-white/75">Your Plex, Jellyfin, and Emby libraries in a cinema built around you. On Apple Vision Pro, iPhone, and iPad.</p>
           <div className="mt-4 text-[15px] font-semibold text-cyan-400">See what&rsquo;s new →</div>
         </a>
 
@@ -35,7 +35,7 @@ export default function Home() {
         >
           <span className="inline-block px-2.5 py-1 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider">iOS</span>
           <div className="mt-3.5 text-[40px] leading-tight font-marker">CrossPort</div>
-          <p className="mt-2.5 text-[17px] leading-snug text-white/75">The companion app for e-readers running CrossPoint. Books, wallpapers and files over WiFi.</p>
+          <p className="mt-2.5 text-[17px] leading-snug text-white/75">The companion app for e-readers running CrossPoint. Books, wallpapers, and files over WiFi.</p>
           <div className="mt-4 text-[15px] font-semibold text-cyan-400">Get it on the App Store →</div>
         </a>
       </div>

@@ -7,9 +7,9 @@ const base = process.env.PUBLIC_URL || '';
 
 const whatsNew = [
   ['Jellyfin and Emby', 'They join Plex. Multiple servers, one shared toolbar.'],
-  ['One library, every server', 'Search across everything you own. Genre chips, trailers, extras and cast on richer detail pages.'],
+  ['One library, every server', 'Search across everything you own. Genre chips, trailers, extras, and cast on richer detail pages.'],
   ['AI 3D', 'Watch 2D titles with real depth, on device.'],
-  ['VR180, VR360 and spatial video', 'Immersive formats play natively, alongside MV-HEVC spatial video.'],
+  ['VR180, VR360, and spatial video', 'Immersive formats play natively, alongside MV-HEVC spatial video.'],
   ['Transcribe', 'On-device live subtitles for videos that have none.'],
   ['Downloads that remember', 'Offline playback resumes where you stopped and reports back to your server when you’re online again.'],
 ];
@@ -59,9 +59,9 @@ export default function Chroma() {
           </div>
         </div>
         <div className="wrap">
-          <div className="tag">Chroma 2 is out now on Apple Vision Pro, iPhone and iPad</div>
+          <div className="tag">Chroma 2 is out now on Apple Vision Pro, iPhone, and iPad</div>
           <h1>Your media, cinema-grade.</h1>
-          <p className="lede">Plex, Jellyfin, Emby and local videos, played in all their glory. 4K, Dolby Vision and Atmos in a theater that goes wherever you do.</p>
+          <p className="lede">Plex, Jellyfin, Emby, and local videos, played in all their glory. 4K, Dolby Vision, and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
             <a href={APP_STORE} className="btn fill">Get Chroma on the App Store</a>
             <Link to="/news/chroma-2" className="btn glass">Read what&rsquo;s new</Link>
@@ -92,7 +92,7 @@ export default function Chroma() {
             </div>
             <div>
               <h2>A theater built around you.</h2>
-              <p className="body">Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR and multichannel audio come through as the file was made.</p>
+              <p className="body">Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR, and multichannel audio come through as the file was made.</p>
             </div>
           </div>
         </div>
