@@ -17,14 +17,14 @@ export default function Home() {
           className={`${card} -rotate-2`}
           style={{ background: 'rgba(13,13,20,0.82)', boxShadow: '0 24px 60px rgba(138,43,226,0.25)' }}
         >
-          <span className="inline-block px-2.5 py-1 rounded-full bg-cyan-400 text-black text-xs font-bold tracking-wider">NEW · 2</span>
+          <span className="inline-block px-2.5 py-1 rounded-full bg-cyan-400 text-black text-xs font-bold tracking-wider">NEW · 2.9</span>
           <div
             className="mt-3.5 text-[44px] leading-tight"
             style={{ fontFamily: 'Monoton, cursive', background: 'linear-gradient(90deg, #FF2D55, #FF9500, #FFCC00, #00C7BE, #32ADE6)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}
           >
             Chroma
           </div>
-          <p className="mt-2.5 text-[17px] leading-snug text-white/75">Your Plex, Jellyfin, and Emby libraries in a cinema built around you. On Apple Vision Pro, iPhone, and iPad.</p>
+          <p className="mt-2.5 text-[17px] leading-snug text-white/75">Your Plex, Jellyfin, and Emby libraries in a cinema built around you. On Apple Vision Pro, iPhone, iPad, and Apple TV.</p>
           <div className="mt-4 text-[15px] font-semibold text-cyan-400">See what&rsquo;s new →</div>
         </a>
 

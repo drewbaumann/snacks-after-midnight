@@ -6,12 +6,12 @@ const APP_STORE = 'https://apps.apple.com/us/app/chroma-spatial-cinema/id6478800
 const base = process.env.PUBLIC_URL || '';
 
 const whatsNew = [
-  ['Jellyfin and Emby', 'They join Plex. Multiple servers, one shared toolbar.'],
-  ['One library, every server', 'Search across everything you own. Genre chips, trailers, extras, and cast on richer detail pages.'],
-  ['AI 3D', 'Watch 2D titles with real depth, on device.'],
-  ['VR180, VR360, and spatial video', 'Immersive formats play natively, alongside MV-HEVC spatial video.'],
-  ['Transcribe', 'On-device live subtitles for videos that have none.'],
-  ['Downloads that remember', 'Offline playback resumes where you stopped and reports back to your server when you’re online again.'],
+  ['Apple TV', 'Your libraries on the biggest screen in the house, with Top Shelf, Plex Home profiles, and the same Chroma Pass.'],
+  ['The Nostalgia Machine', 'A home-video room on Vision Pro, with a VCR, a pile of tapes for each show, and an analog TV.'],
+  ['New cinemas', 'A photoreal small cinema, a reworked large one, and projection booths that glow with the film. Or take it into one of Apple’s Environments.'],
+  ['Play in Chroma', 'A Safari extension on Vision Pro that opens a web page’s video in Chroma, 4K VR streams included.'],
+  ['Blu-ray rips, as made', 'Dolby Vision Profile 7 plays as Dolby Vision, and films with DTS or TrueHD keep their original picture while your server converts only the sound.'],
+  ['In your language', 'Chroma now speaks French, German, Spanish, Japanese, Korean, Chinese, Arabic, and Hindi.'],
 ];
 
 // HashRouter owns the URL fragment, so a plain "#pass" link would navigate to
@@ -59,12 +59,12 @@ export default function Chroma() {
           </div>
         </div>
         <div className="wrap">
-          <div className="tag">Chroma 2 is out now on Apple Vision Pro, iPhone, and iPad</div>
+          <div className="tag">Chroma 2.9 is out now on Apple Vision Pro, iPhone, iPad, and Apple TV</div>
           <h1>Your media, cinema-grade.</h1>
           <p className="lede">Plex, Jellyfin, Emby, and local videos, played in all their glory. 4K, Dolby Vision, and Atmos in a theater that goes wherever you do.</p>
           <div className="cta-row">
             <a href={APP_STORE} className="btn fill">Get Chroma on the App Store</a>
-            <Link to="/news/chroma-2" className="btn glass">Read what&rsquo;s new</Link>
+            <Link to="/news/chroma-2-9" className="btn glass">Read what&rsquo;s new</Link>
           </div>
           <div className="fine">Free to try. Chroma Pass unlocks unlimited watching.</div>
         </div>
@@ -72,7 +72,7 @@ export default function Chroma() {
 
       <section id="new" className="block first">
         <div className="wrap">
-          <h2>What&rsquo;s new in Chroma 2</h2>
+          <h2>What&rsquo;s new in Chroma 2.9</h2>
           <div className="grid3">
             {whatsNew.map(([title, text]) => (
               <div className="card" key={title}>
@@ -92,7 +92,7 @@ export default function Chroma() {
             </div>
             <div>
               <h2>A theater built around you.</h2>
-              <p className="body">Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR, and multichannel audio come through as the file was made.</p>
+              <p className="body">Choose a room: two cinemas, the Nostalgia Machine, or one of Apple&rsquo;s Environments. Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR, and multichannel audio come through as the file was made.</p>
             </div>
           </div>
         </div>
@@ -130,6 +130,21 @@ export default function Chroma() {
         </div>
       </section>
 
+      <section id="tv" className="block">
+        <div className="wrap">
+          <div className="split flip">
+            <div>
+              <h2>Now on Apple TV.</h2>
+              <p className="body">Your libraries on the biggest screen in the house. Top Shelf shows what you&rsquo;re watching, Who&rsquo;s Watching picks the right Plex Home profile, and subtitles stored as pictures, like those on Blu-rays, are read into text you can restyle. Same Chroma Pass, and it picks up right where you left off.</p>
+              <div className="cta-row"><a href={APP_STORE} className="btn fill">Get Chroma for Apple TV</a></div>
+            </div>
+            <div className="shot">
+              <img src={`${base}/chroma/apple-tv.jpg`} alt="A show's detail page in Chroma on Apple TV" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="pass" className="block">
         <div className="wrap">
           <div className="panel pass">
@@ -145,7 +160,7 @@ export default function Chroma() {
         <div className="wrap">
           <h2>Bring your own library.</h2>
           <div className="cta-row">
-            <a href={APP_STORE} className="btn fill">Get Chroma for Vision Pro</a>
+            <a href={APP_STORE} className="btn fill">Get Chroma on the App Store</a>
           </div>
         </div>
       </section>

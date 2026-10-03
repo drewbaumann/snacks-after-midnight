@@ -10,6 +10,61 @@ function Shot({ src, alt, narrow }) {
 // Newest first. Each post is an app update; `body` is its full text.
 const posts = [
   {
+    slug: 'chroma-2-9',
+    app: 'Chroma',
+    title: 'Chroma 2.9: now on Apple TV',
+    date: '2026-10-03',
+    summary: 'Chroma comes to Apple TV, and Vision Pro gets the Nostalgia Machine, new cinemas, Apple’s Environments, and a Safari extension.',
+    cover: 'chroma-2-9/tv-home.jpg',
+    body: () => (
+      <>
+        <p>Chroma 2.9 brings your Plex, Jellyfin, and Emby libraries to <strong>Apple TV</strong>. It&rsquo;s the same Chroma you know from Vision Pro, iPhone, and iPad, built for the remote, and the same Chroma Pass covers it. Vision Pro picks up new places to watch, too.</p>
+        <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for Apple Vision Pro, iPhone, iPad, and Apple TV.</p>
+        <Shot src="chroma-2-9/tv-home.jpg" alt="Chroma's Home on Apple TV" />
+
+        <h2>Apple TV</h2>
+        <ul>
+          <li><strong>Top Shelf</strong> shows what you&rsquo;re watching right on the Home Screen.</li>
+          <li><strong>Who&rsquo;s Watching</strong> asks which Plex Home profile is on the couch when Chroma opens.</li>
+          <li><strong>Subtitles stored as pictures</strong>, like those on Blu-rays and TV recordings, are read into text, so you can style them like any other subtitles. Every subtitle and audio track shows up in Apple&rsquo;s own menus, and Siri can switch them.</li>
+          <li><strong>Skip Intro, Skip Credits, and Next Episode</strong> appear as the system&rsquo;s own buttons (skipping needs Plex Pass on the library owner&rsquo;s server).</li>
+          <li><strong>Picture in Picture</strong> keeps the film playing while you browse your library.</li>
+        </ul>
+        <div className="grid grid-cols-2 gap-4">
+          <Shot src="chroma-2-9/tv-detail.jpg" alt="A show's detail page on Apple TV" />
+          <Shot src="chroma-2-9/tv-player.jpg" alt="Playing a film on Apple TV" />
+        </div>
+
+        <h2>New rooms on Vision Pro</h2>
+        <ul>
+          <li><strong>The Nostalgia Machine</strong> is a home-video room with a VCR, a pile of tapes for each show, and an analog TV. Pick up a tape, load it, and settle in.</li>
+          <li><strong>New cinemas.</strong> A photoreal small cinema and a reworked large one, with projection booths that glow with the film&rsquo;s colors.</li>
+          <li><strong>Apple&rsquo;s Environments.</strong> Choose one from the Environments menu and your film goes with you.</li>
+          <li><strong>Play in Chroma</strong>, a Safari extension that opens a web page&rsquo;s video in Chroma, including 4K VR streams.</li>
+          <li>3D and VR films are recognized automatically and open the right way, even when the file doesn&rsquo;t say so.</li>
+        </ul>
+        <Shot src="chroma-2-9/vision-chroma-cinema.jpg" alt="The small cinema on Vision Pro" />
+        <Shot src="chroma-2-9/vision-cineplex-cinema.jpg" alt="The large cinema on Vision Pro" />
+
+        <h2>Everywhere</h2>
+        <ul>
+          <li><strong>Blu-ray rips, as made.</strong> Dolby Vision Profile 7 now plays as Dolby Vision instead of plain HDR, and films with DTS or TrueHD audio keep their original picture while your server converts only the sound.</li>
+          <li>When your server converts a film, the <strong>Quality menu</strong> shows what it&rsquo;s really sending, like &ldquo;1080p HEVC HDR10 &middot; 6.4 Mbps&rdquo;.</li>
+          <li><strong>Subtitles</strong> switch without restarting the film, and your choice carries over to the next episode.</li>
+          <li>Tap a name under <strong>Starring</strong> or <strong>Director</strong> to see their other work, from all your servers.</li>
+          <li>Chroma now speaks <strong>French, German, Spanish, Japanese, Korean, Chinese, Arabic, and Hindi</strong>.</li>
+          <li>On iPhone, pick from <strong>six app icons</strong>.</li>
+        </ul>
+
+        <h2>Thank you</h2>
+        <p>Thanks to Carter, a day-zero supporter of Chroma, whose work gave this release a big boost, and to the 3D fans who keep pushing for better ways to watch in depth.</p>
+
+        <hr />
+        <p>See more on the <Link to="/chroma">Chroma page</Link>, and if you try it, <Link to="/contact">tell us what you think</Link>.</p>
+      </>
+    ),
+  },
+  {
     slug: 'chroma-2',
     app: 'Chroma',
     title: 'Chroma 2: every server, every screen',

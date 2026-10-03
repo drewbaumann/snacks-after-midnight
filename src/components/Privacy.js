@@ -3,14 +3,14 @@ export default function Privacy() {
     <div className="flex flex-col items-center text-black overflow-y-auto p-8 pt-20">
       <h1 className="text-4xl mb-8">Privacy Policy</h1>
       <div className="prose max-w-3xl bg-white p-8 rounded-lg">
-        <p><em>Updated: September 5, 2026</em></p>
+        <p><em>Updated: October 3, 2026</em></p>
 
 <p>At our company, we prioritize your privacy and aim to collect the least amount of personal data from you as possible. We only collect information when necessary for the functionality of our website and apps. Whenever feasible, we provide you with the option to opt out of data collection. Further details regarding the data we collect and the reasons behind it are outlined in the following sections.</p>
 
 <p>Snacks After Midnight ("us", "we", or "our") operates the https://snacksaftermidnight.com website, the Chroma - Spatial Cinema application ("Chroma"), and the CrossPort companion application ("CrossPort") (collectively, the "Service").</p>
 
 <h2 id="chroma-privacy">Chroma &mdash; Additional Privacy Information</h2>
-<p>Chroma is a media player for your own Plex, Jellyfin, and Emby servers on Apple Vision Pro, iPhone, and iPad. The following applies specifically to Chroma:</p>
+<p>Chroma is a media player for your own Plex, Jellyfin, and Emby servers on Apple Vision Pro, iPhone, iPad, and Apple TV. The following applies specifically to Chroma:</p>
 <ul>
   <li><strong>No Snacks After Midnight account.</strong> Chroma has no account of its own. You sign in to your media servers directly; we never see those credentials.</li>
   <li><strong>Credentials stay on your device.</strong> Server addresses and sign-in tokens are stored in the device Keychain and are used only to talk to the servers you added. Plex sign-in goes through plex.tv, subject to Plex&rsquo;s privacy policy.</li>
