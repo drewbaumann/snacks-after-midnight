@@ -55,7 +55,7 @@ export default function Chroma() {
         <div className="iris-glow" />
         <div className="wrap hero-shot">
           <div className="frame">
-            <img src={`${base}/chroma/hero-room.jpg`} alt="Chroma's episode page for Barry, floating in an immersive theater on Apple Vision Pro" />
+            <img src={`${base}/chroma/hero-room.jpg`} alt="A film with subtitles on the big screen in Chroma's small cinema on Apple Vision Pro" />
           </div>
         </div>
         <div className="wrap">
