@@ -10,7 +10,7 @@ const whatsNew = [
   ['The Nostalgia Machine', 'A home-video room on Vision Pro, with a VCR, a pile of tapes for each show, and an analog TV.'],
   ['New cinemas', 'A photoreal small cinema, a reworked large one, and projection booths that glow with the film. Or take it into one of Apple’s Environments.'],
   ['Play in Chroma', 'A Safari extension on Vision Pro that opens a web page’s video in Chroma, 4K VR streams included.'],
-  ['Blu-ray rips, as made', 'Dolby Vision Profile 7 plays as Dolby Vision, and films with DTS or TrueHD keep their original picture while your server converts only the sound.'],
+  ['Wait for Full Quality', 'If you’d rather wait out a slow connection than watch a softer picture, Chroma never lowers the quality on its own.'],
   ['In your language', 'Chroma now speaks French, German, Spanish, Japanese, Korean, Chinese, Arabic, and Hindi.'],
 ];
 

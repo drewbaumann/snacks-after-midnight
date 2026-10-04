@@ -48,7 +48,7 @@ const posts = [
 
         <h2>Everywhere</h2>
         <ul>
-          <li><strong>Blu-ray rips, as made.</strong> Dolby Vision Profile 7 now plays as Dolby Vision instead of plain HDR, and films with DTS or TrueHD audio keep their original picture while your server converts only the sound.</li>
+          <li><strong>Wait for Full Quality.</strong> If you&rsquo;d rather wait out a slow connection than watch a softer picture, turn it on in Settings and Chroma never lowers the quality on its own.</li>
           <li>When your server converts a film, the <strong>Quality menu</strong> shows what it&rsquo;s really sending, like &ldquo;1080p HEVC HDR10 &middot; 6.4 Mbps&rdquo;.</li>
           <li><strong>Subtitles</strong> switch without restarting the film, and your choice carries over to the next episode.</li>
           <li>Tap a name under <strong>Starring</strong> or <strong>Director</strong> to see their other work, from all your servers.</li>
