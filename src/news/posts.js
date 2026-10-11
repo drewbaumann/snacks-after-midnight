@@ -10,6 +10,62 @@ function Shot({ src, alt, narrow }) {
 // Newest first. Each post is an app update; `body` is its full text.
 const posts = [
   {
+    slug: 'chroma-2-9-2',
+    app: 'Chroma',
+    title: 'Chroma 2.9.2: your Home, your collections',
+    date: '2026-10-11',
+    summary: 'Arrange Home your way, bring your Plex collections onto it, and watch on iPhone Duo, Apple TV, and Vision Pro.',
+    body: () => (
+      <>
+        <p>Chroma 2.9.2 is about the first screen you see. <strong>Home is yours to arrange</strong>, your <strong>Plex collections</strong> can live on it, and it follows you from device to device. It also wraps in 2.9.1, which made Chroma ready for <strong>iPhone Duo</strong>.</p>
+        <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for Apple Vision Pro, iPhone, iPad, and Apple TV.</p>
+
+        <h2>Make Home yours</h2>
+        <ul>
+          <li><strong>Edit Home</strong>, in Home&rsquo;s display menu, lets you choose which rows appear and drag them into the order you like.</li>
+          <li>Your Home <strong>follows you through iCloud</strong>, so the rows you arrange on iPhone show up the same way on iPad, Apple TV, and Vision Pro.</li>
+        </ul>
+
+        <h2>Plex collections</h2>
+        <ul>
+          <li>Every Plex server with collections now has a <strong>Collections</strong> page, smart collections included.</li>
+          <li>Any collection can go on Home, and collections promoted to Home in Plex, by hand or with Kometa or Agregarr, show up there on their own.</li>
+        </ul>
+
+        <h2>iPhone and iPad</h2>
+        <ul>
+          <li><strong>Ready for iPhone Duo.</strong> Chroma adapts to the cover screen and the open display in either orientation. In laptop pose the picture moves to the top half with the controls below, and in book pose the controls sit on the right-hand page.</li>
+          <li><strong>Downloads pick up where they stopped</strong> after a dropped connection or a relaunch, instead of starting over.</li>
+          <li><strong>Blu-ray disc images.</strong> Open a decrypted .iso in Local Videos and Chroma plays the main feature.</li>
+        </ul>
+
+        <h2>Apple TV</h2>
+        <ul>
+          <li>Each server now has <strong>Watchlist</strong> and <strong>Collections</strong> in the sidebar, and your watchlist has its own row on Home.</li>
+          <li>Hold select on a collection to add it to Home.</li>
+        </ul>
+
+        <h2>Apple Vision Pro</h2>
+        <ul>
+          <li><strong>3D Blu-ray plays in 3D.</strong> 3D Blu-ray films now play with both eyes, from MKV files, disc images, and your server.</li>
+          <li><strong>Better HDR in the cinemas.</strong> HDR10 films keep their highlights, so skies and lights no longer glare.</li>
+          <li><strong>Mixed reality VR.</strong> VR180 videos made for passthrough play with your room showing through.</li>
+          <li>Letterboxed and very wide flat films are no longer mistaken for 3D.</li>
+        </ul>
+
+        <h2>Everywhere</h2>
+        <ul>
+          <li><strong>Your whole library.</strong> Libraries now page through every title, with no more stopping at 200, and you can filter by quality.</li>
+          <li>Person and genre pages include matching titles from your other servers.</li>
+          <li>Browsing a Plex library by folder works again, Chroma Pass is recognized when you&rsquo;re offline, and Jellyfin and Emby Dolby Vision titles are recognized correctly.</li>
+        </ul>
+
+        <h2>Thank you</h2>
+        <p>Thanks to the r/ChromaApp folks who asked for collections on Home, and to Carter, whose work keeps lifting every release.</p>
+      </>
+    ),
+  },
+  {
     slug: 'chroma-2-9',
     app: 'Chroma',
     title: 'Chroma 2.9: now on Apple TV',
