@@ -7,7 +7,7 @@ const base = process.env.PUBLIC_URL || '';
 
 const whatsNew = [
   ['Apple TV', 'Your libraries on the biggest screen in the house, with Top Shelf, Plex Home profiles, and the same Chroma Pass.'],
-  ['New rooms', 'On Vision Pro, the Nostalgia Machine, a home-video room with a VCR and an analog TV, and Midnight Woods, a cabin porch in a forest at night under tonight’s real moon.'],
+  ['New environments', 'On Vision Pro, the Nostalgia Machine, a home-video environment with a VCR and an analog TV, and Midnight Woods, a cabin porch in a forest at night under tonight’s real moon.'],
   ['New cinemas', 'A photoreal small cinema, a reworked large one, and projection booths that glow with the film. Or take it into one of Apple’s Environments.'],
   ['Play in Chroma', 'A Safari extension on Vision Pro that opens a web page’s video in Chroma, 4K VR streams included.'],
   ['Wait for Full Quality', 'If you’d rather wait out a slow connection than watch a softer picture, Chroma never lowers the quality on its own.'],
@@ -92,7 +92,7 @@ export default function Chroma() {
             </div>
             <div>
               <h2>A theater built around you.</h2>
-              <p className="body">Choose a room: two cinemas, the Nostalgia Machine, Midnight Woods, or one of Apple&rsquo;s Environments. Pick your row, or float up to the balcony and tilt the whole room back for watching while lying down. Dolby Vision, Dolby Atmos, HDR, and multichannel audio come through as the file was made.</p>
+              <p className="body">Choose an environment: two cinemas, the Nostalgia Machine, Midnight Woods, or one of Apple&rsquo;s Environments. Pick your row, or float up to the balcony and tilt the whole environment back for watching while lying down. Dolby Vision, Dolby Atmos, HDR, and multichannel audio come through as the file was made.</p>
             </div>
           </div>
         </div>

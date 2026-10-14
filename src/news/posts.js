@@ -12,12 +12,12 @@ const posts = [
   {
     slug: 'midnight-woods',
     app: 'Chroma',
-    title: 'Midnight Woods: a Halloween room on Vision Pro',
+    title: 'Midnight Woods: a Halloween environment on Vision Pro',
     date: '2026-10-14',
-    summary: 'Chroma 2.9.4 on Vision Pro brings Midnight Woods, rooms that download when you open them, and playback on slow connections.',
+    summary: 'Chroma 2.9.4 on Vision Pro brings Midnight Woods, environments that download when you open them, and playback on slow connections.',
     body: () => (
       <>
-        <p>Chroma 2.9.4 is out on Apple Vision Pro, and it brings a new room for October: <strong>Midnight Woods</strong>.</p>
+        <p>Chroma 2.9.4 is out on Apple Vision Pro, and it brings a new environment for October: <strong>Midnight Woods</strong>.</p>
         <div className="relative w-full overflow-hidden rounded-xl" style={{ aspectRatio: '16 / 9' }}>
           <iframe className="absolute inset-0 h-full w-full" src="https://www.youtube-nocookie.com/embed/zcXskeNcZRs" title="Midnight Woods in Chroma on Apple Vision Pro" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy" />
         </div>
@@ -26,12 +26,12 @@ const posts = [
         <h2>Midnight Woods</h2>
         <p>You sit on the porch of a cabin in a forest at night. The windows behind you glow with candlelight, the trees run off into the dark, and an old CRT on the table plays whatever you pick from your own library, from Plex, Jellyfin, Emby, or local files.</p>
         <ul>
-          <li><strong>The real moon.</strong> By default the moon shows tonight&rsquo;s actual phase, and you can pick a different one in the room&rsquo;s settings.</li>
+          <li><strong>The real moon.</strong> By default the moon shows tonight&rsquo;s actual phase, and you can pick a different one in the environment&rsquo;s settings.</li>
           <li><strong>Night sounds</strong> have their own volume, so the woods can be as quiet or as loud as you like.</li>
-          <li>Midnight Woods is a <strong>Chroma Pass</strong> room, and Chroma Pass starts with a 7-day free trial.</li>
+          <li>Midnight Woods is a <strong>Chroma Pass</strong> environment, and Chroma Pass starts with a 7-day free trial.</li>
         </ul>
 
-        <h2>Rooms that download</h2>
+        <h2>Environments that download</h2>
         <p>Midnight Woods and the Nostalgia Machine now download the first time you open them, so Chroma itself is much smaller. You can download or remove them ahead of time in Settings &rsaquo; Environments.</p>
 
         <h2>Also on Vision Pro</h2>
@@ -128,9 +128,9 @@ const posts = [
           <Shot src="chroma-2-9/tv-player.jpg" alt="Playing a film on Apple TV" />
         </div>
 
-        <h2>New rooms on Vision Pro</h2>
+        <h2>New environments on Vision Pro</h2>
         <ul>
-          <li><strong>The Nostalgia Machine</strong> is a home-video room with a VCR, a pile of tapes for each show, and an analog TV. Pick up a tape, load it, and settle in.</li>
+          <li><strong>The Nostalgia Machine</strong> is a home-video environment with a VCR, a pile of tapes for each show, and an analog TV. Pick up a tape, load it, and settle in.</li>
           <li><strong>New cinemas.</strong> A photoreal small cinema and a reworked large one, with projection booths that glow with the film&rsquo;s colors.</li>
           <li><strong>Apple&rsquo;s Environments.</strong> Choose one from the Environments menu and your film goes with you.</li>
           <li><strong>Play in Chroma</strong>, a Safari extension that opens a web page&rsquo;s video in Chroma, including 4K VR streams.</li>
