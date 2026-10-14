@@ -26,7 +26,7 @@ const posts = [
         <ul>
           <li><strong>The real moon.</strong> By default the moon shows tonight&rsquo;s actual phase, and you can pick a different one in the room&rsquo;s settings.</li>
           <li><strong>Night sounds</strong> have their own volume, so the woods can be as quiet or as loud as you like.</li>
-          <li>Midnight Woods is a <strong>Chroma Pass</strong> room.</li>
+          <li>Midnight Woods is a <strong>Chroma Pass</strong> room, and Chroma Pass starts with a 7-day free trial.</li>
         </ul>
 
         <h2>Rooms that download</h2>
