@@ -19,6 +19,7 @@ const posts = [
       <>
         <p>Chroma 2.9.4 is out on Apple Vision Pro, and it brings a new room for October: <strong>Midnight Woods</strong>.</p>
         <video src={`${base}/news/midnight-woods/midnight-woods.mp4`} poster={`${base}/news/midnight-woods/midnight-woods.jpg`} className="rounded-xl w-full" autoPlay muted loop playsInline controls aria-label="Night of the Living Dead playing on an old CRT on a cabin porch in Midnight Woods" />
+        <p className="text-sm"><a href="https://youtu.be/zcXskeNcZRs">Watch with sound on YouTube</a></p>
         <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for Apple Vision Pro, iPhone, iPad, and Apple TV.</p>
 
         <h2>Midnight Woods</h2>
