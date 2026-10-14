@@ -10,6 +10,41 @@ function Shot({ src, alt, narrow }) {
 // Newest first. Each post is an app update; `body` is its full text.
 const posts = [
   {
+    slug: 'midnight-woods',
+    app: 'Chroma',
+    title: 'Midnight Woods: a Halloween room on Vision Pro',
+    date: '2026-10-14',
+    summary: 'Chroma 2.9.4 on Vision Pro brings Midnight Woods, rooms that download when you open them, and playback on slow connections.',
+    body: () => (
+      <>
+        <p>Chroma 2.9.4 is out on Apple Vision Pro, and it brings a new room for October: <strong>Midnight Woods</strong>.</p>
+        <video src={`${base}/news/midnight-woods/midnight-woods.mp4`} poster={`${base}/news/midnight-woods/midnight-woods.jpg`} className="rounded-xl w-full" autoPlay muted loop playsInline controls aria-label="Night of the Living Dead playing on an old CRT on a cabin porch in Midnight Woods" />
+        <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for Apple Vision Pro, iPhone, iPad, and Apple TV.</p>
+
+        <h2>Midnight Woods</h2>
+        <p>You sit on the porch of a cabin in a forest at night. The windows behind you glow with candlelight, the trees run off into the dark, and an old CRT on the table plays whatever you pick from your own library, from Plex, Jellyfin, Emby, or local files.</p>
+        <ul>
+          <li><strong>The real moon.</strong> By default the moon shows tonight&rsquo;s actual phase, and you can pick a different one in the room&rsquo;s settings.</li>
+          <li><strong>Night sounds</strong> have their own volume, so the woods can be as quiet or as loud as you like.</li>
+          <li>Midnight Woods is a <strong>Chroma Pass</strong> room.</li>
+        </ul>
+
+        <h2>Rooms that download</h2>
+        <p>Midnight Woods and the Nostalgia Machine now download the first time you open them, so Chroma itself is much smaller. You can download or remove them ahead of time in Settings &rsaquo; Environments.</p>
+
+        <h2>Also on Vision Pro</h2>
+        <ul>
+          <li><strong>Plays on slow connections.</strong> On weak Wi-Fi, like on a plane, a video now starts at a quality the connection can carry instead of refusing to play.</li>
+          <li><strong>Manage your Plex server.</strong> If you own the server, fix a wrong match, choose or upload artwork, refresh metadata, and detect intros and end credits so Skip Intro and Skip Credits appear, all from a title&rsquo;s page.</li>
+          <li>More Info shows which skip buttons a title has, seeking in 4K Mixed reality VR keeps the picture with the sound, and changing quality keeps your place.</li>
+        </ul>
+
+        <h2>Thank you</h2>
+        <p>Thanks to everyone who sends in ideas on r/ChromaApp, and to Carter, as always. Happy Halloween!</p>
+      </>
+    ),
+  },
+  {
     slug: 'chroma-2-9-2',
     app: 'Chroma',
     title: 'Chroma 2.9.2: your Home, your collections',
