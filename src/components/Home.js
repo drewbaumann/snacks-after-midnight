@@ -31,8 +31,11 @@ export default function Home() {
           className={`${card} rotate-[1.5deg]`}
           style={{ background: 'rgba(13,13,20,0.82)', boxShadow: '0 24px 60px rgba(75,0,130,0.3)' }}
         >
-          <span className="inline-block px-2.5 py-1 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider">iOS</span>
-          <div className="mt-3.5 text-[40px] leading-tight font-marker">CrossPort</div>
+          <span className="inline-block px-2.5 py-1 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider">NEW · 2.7</span>
+          <div className="mt-3.5 flex items-center gap-3">
+            <img src="/crossport/icon-64.png" alt="" width="44" height="44" className="rounded-[10px]" />
+            <span className="text-[40px] leading-tight font-semibold" style={{ fontFamily: 'Literata, Georgia, serif', letterSpacing: '-0.015em' }}>CrossPort</span>
+          </div>
           <p className="mt-2.5 text-[17px] leading-snug text-white/75">The companion app for e-readers running CrossPoint. Books, wallpapers, and files over WiFi.</p>
           <div className="mt-4 text-[15px] font-semibold text-cyan-400">See what it does →</div>
         </a>
