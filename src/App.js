@@ -2,17 +2,18 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import Header from './components/Header';
 import Home from './components/Home';
 import Chroma from './components/Chroma';
+import CrossPort from './components/CrossPort';
 import Contact from './components/Contact';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import { NewsList, NewsPost } from './components/News';
 import ThreeBackground from './components/ThreeBackground';
 
-// The Chroma page brings its own background and navigation; every other
-// route sits on the particle field under the shared header.
+// The Chroma and CrossPort pages bring their own background and navigation;
+// every other route sits on the particle field under the shared header.
 function Shell() {
   const { pathname } = useLocation();
-  const standalone = pathname.startsWith('/chroma');
+  const standalone = pathname.startsWith('/chroma') || pathname.startsWith('/crossport');
   return (
     <>
       {!standalone && <ThreeBackground />}
@@ -20,6 +21,7 @@ function Shell() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chroma" element={<Chroma />} />
+        <Route path="/crossport" element={<CrossPort />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />

@@ -1,6 +1,4 @@
 
-const CROSSPORT = 'https://apps.apple.com/us/app/crossport/id6761747300';
-
 const card = 'block w-full max-w-[360px] p-7 rounded-[20px] border border-white/15 backdrop-blur-md text-white no-underline transition-transform duration-150 ease-out hover:-translate-y-1.5 hover:rotate-0';
 
 export default function Home() {
@@ -29,14 +27,14 @@ export default function Home() {
         </a>
 
         <a
-          href={CROSSPORT}
+          href="/crossport/"
           className={`${card} rotate-[1.5deg]`}
           style={{ background: 'rgba(13,13,20,0.82)', boxShadow: '0 24px 60px rgba(75,0,130,0.3)' }}
         >
           <span className="inline-block px-2.5 py-1 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider">iOS</span>
           <div className="mt-3.5 text-[40px] leading-tight font-marker">CrossPort</div>
           <p className="mt-2.5 text-[17px] leading-snug text-white/75">The companion app for e-readers running CrossPoint. Books, wallpapers, and files over WiFi.</p>
-          <div className="mt-4 text-[15px] font-semibold text-cyan-400">Get it on the App Store →</div>
+          <div className="mt-4 text-[15px] font-semibold text-cyan-400">See what it does →</div>
         </a>
       </div>
     </main>
