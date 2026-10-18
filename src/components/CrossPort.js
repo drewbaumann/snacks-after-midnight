@@ -110,7 +110,7 @@ export default function CrossPort() {
           <nav className="nav-links">
             <a href="#read" onClick={jump} className="hide-sm">Read</a>
             <a href="#listen" onClick={jump} className="hide-sm">Listen</a>
-            <a href="#wallpaper" onClick={jump} className="hide-sm">Wallpaper</a>
+            <a href="#duo" onClick={jump} className="hide-sm">iPhone Duo</a>
             <a href={APP_STORE} className="primary">Download</a>
           </nav>
         </div>
@@ -195,6 +195,21 @@ export default function CrossPort() {
       >
         <p className="body">Browse your own Calibre content server, Project Gutenberg, or any OPDS catalog right in CrossPort. Search, sign in where a library needs it, and send a book straight to your phone or your reader.</p>
       </Feature>
+
+      <section id="duo" className="duo">
+        <div className="wrap">
+          <div className="duo-head">
+            <div className="eyebrow">iPhone Duo</div>
+            <h2>Open it like a book.</h2>
+            <p className="body">On iPhone Duo, CrossPort opens with the phone. Books read as two-page spreads across the inside display, and screens split into two panes at the fold. Half open like a laptop, the reader keeps the page above the fold and its controls below.</p>
+          </div>
+          <img className="duo-spread" src={img('duo-spread-alice.webp')} alt="Alice's Adventures in Wonderland as a two-page spread on iPhone Duo's inside display" loading="lazy" />
+          <div className="duo-row">
+            <img src={img('duo-detail.webp')} alt="Dracula's page on iPhone Duo, with the cover and Continue Reading on one side of the fold and the chapter and synopsis on the other" loading="lazy" />
+            <p className="body">Every screen uses both halves, with nothing sitting on the fold: a book’s cover and the button to keep reading on one side, its chapter and synopsis on the other.</p>
+          </div>
+        </div>
+      </section>
 
       <section id="more" className="more">
         <div className="wrap">
