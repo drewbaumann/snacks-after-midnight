@@ -91,7 +91,7 @@ export default function CrossPort() {
           <div className="hero-art">
             <div className="sky" />
             <Reader screen="reader-hiker.jpg" alt="An e-reader showing CrossPort's hiker carrying a pack of books" className="hero-reader" />
-            <Phone src="book.jpg" alt="Dracula's page in CrossPort, with its cover, rating, and a Continue Reading button" className="hero-phone" />
+            <Phone src="book.webp" alt="Dracula's page in CrossPort, with its cover, rating, and a Continue Reading button" className="hero-phone" />
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function CrossPort() {
         id="read"
         eyebrow="Read anywhere"
         title="Start on the reader. Keep going on your phone."
-        art={<Phone src="curl.jpg" alt="A page of Pride and Prejudice curling over in CrossPort's reader" />}
+        art={<Phone src="curl.webp" alt="A page of Pride and Prejudice curling over in CrossPort's reader" />}
       >
         <p className="body">CrossPort has its own book reader, with real page turns, a page curl or a slide, and two pages side by side when you turn your phone sideways. Your place syncs both ways: open the reader later and it picks up the page you stopped on.</p>
         <ul className="points">
@@ -125,7 +125,7 @@ export default function CrossPort() {
         flip
         eyebrow="Read Aloud"
         title="Listen when your eyes are busy."
-        art={<Phone src="read-aloud.jpg" alt="CrossPort reading a page aloud, with playback controls under the text" />}
+        art={<Phone src="read-aloud.webp" alt="CrossPort reading a page aloud, with playback controls under the text" />}
       >
         <p className="body">CrossPort reads to you, highlighting each word and turning the pages as it goes. It keeps going with the screen locked, with controls on the Lock Screen.</p>
         <p className="body">On recent iPhones there’s also a neural voice for English books that runs entirely on the phone. Read a passage aloud, and it can read to you in your own voice.</p>
@@ -137,7 +137,7 @@ export default function CrossPort() {
         title="Sleep screens, previewed in e-ink."
         art={
           <div className="pair">
-            <Phone src="wallpaper.jpg" alt="Wanderer above the Sea of Fog previewed on an Xteink X4 in CrossPort's wallpaper screen" />
+            <Phone src="wallpaper.webp" alt="Wanderer above the Sea of Fog previewed on an Xteink X4 in CrossPort's wallpaper screen" />
           </div>
         }
       >
@@ -149,7 +149,7 @@ export default function CrossPort() {
         flip
         eyebrow="Find books"
         title="Your Calibre library, and thousands of classics."
-        art={<Phone src="feeds.jpg" alt="Pride and Prejudice from a library feed in CrossPort, with buttons to read on the phone or send to the reader" />}
+        art={<Phone src="feeds.webp" alt="Pride and Prejudice from a library feed in CrossPort, with buttons to read on the phone or send to the reader" />}
       >
         <p className="body">Browse your own Calibre content server, Project Gutenberg, or any OPDS catalog right in CrossPort. Search, sign in where a library needs it, and send a book straight to your phone or your reader.</p>
       </Feature>

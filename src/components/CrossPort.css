@@ -83,12 +83,8 @@
   filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.3));
 }
 
-/* A phone: the screenshot in a dark bezel */
-.crossport .phone {
-  border-radius: 40px; padding: 9px; background: #121212;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset, 0 30px 60px rgba(29, 29, 27, 0.28);
-}
-.crossport .phone img { border-radius: 31px; width: 100%; }
+/* A phone: the screenshot already framed in an iPhone 17 Pro Max (from Matte's device frames) */
+.crossport .phone img { width: 100%; filter: drop-shadow(0 28px 34px rgba(29, 29, 27, 0.28)); }
 
 /* The strip under the hero */
 .crossport .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-2); }
@@ -164,8 +160,6 @@
   .crossport .hero-reader { left: 8%; top: 150px; width: 152px; }
   .crossport .strip-row { gap: 6px 18px; font-size: 17px; }
   .crossport .strip-row i { display: none; }
-  .crossport .phone { border-radius: 30px; padding: 7px; }
-  .crossport .phone img { border-radius: 23px; }
   .crossport .art .phone { width: 240px; }
   .crossport .feature { padding-top: 80px; }
   .crossport .more, .crossport .works { padding-top: 88px; }
