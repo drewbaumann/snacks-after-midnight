@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 backdrop-blur-sm" style={{ zIndex: 2 }}>
-      <nav className="flex justify-end space-x-4">
+      <nav className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm sm:justify-end sm:gap-x-4 sm:text-base">
         {/* full page loads, so Safari shows each app's App Store banner */}
         <a href="/chroma/" className="hover:underline">Chroma</a>
         <a href="/crossport/" className="hover:underline">CrossPort</a>
