@@ -70,7 +70,7 @@
   position: absolute; left: 11%; top: 5.5%; width: 77%; height: 79.8%;
   object-fit: cover;
 }
-.crossport .reader .body { position: relative; width: 100%; }
+.crossport .reader .frame { position: relative; width: 100%; }
 /* True to scale: the X4 is about 114 x 69 mm and the 6.9" iPhone in the screenshots about 163 x 78 mm,
    so the reader is 88% of the phone's width */
 .crossport .hero-phone {

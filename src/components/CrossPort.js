@@ -34,11 +34,11 @@ function Phone({ src, alt, className = '' }) {
 }
 
 // The X4 artwork has a transparent screen; the picture sits behind it.
-function Reader({ screen, alt, body = 'x4-white.webp', className = '' }) {
+function Reader({ screen, alt, frame = 'x4-white.webp', className = '' }) {
   return (
     <div className={`reader ${className}`}>
       <img className="screen" src={img(screen)} alt={alt} />
-      <img className="body" src={img(body)} alt="" aria-hidden="true" />
+      <img className="frame" src={img(frame)} alt="" aria-hidden="true" />
     </div>
   );
 }
@@ -172,7 +172,7 @@ export default function CrossPort() {
         <div className="wrap">
           <div className="panel">
             <div className="panel-art">
-              <Reader screen="reader-hiker.jpg" alt="" body="x4-black.webp" className="small" />
+              <Reader screen="reader-hiker.jpg" alt="" frame="x4-black.webp" className="small" />
             </div>
             <div>
               <h2>Made for CrossPoint.</h2>
