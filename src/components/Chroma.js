@@ -24,13 +24,15 @@ function jump(e) {
   target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+// The Aperture mark: five rings, opening ±22° about the right-hand side.
 function CMark() {
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#F5F5F7" strokeLinecap="butt" aria-hidden="true">
-      <path d="M25.12 6.78A13.26 13.26 0 1 0 25.12 21.22" stroke-width="1.48" />
-      <path d="M23.26 7.99A11.04 11.04 0 1 0 23.26 20.01" stroke-width="1.52" />
-      <path d="M21.42 9.18A8.85 8.85 0 1 0 21.42 18.82" stroke-width="1.52" />
-      <path d="M19.58 10.38A6.65 6.65 0 1 0 19.58 17.62" stroke-width="1.52" />
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" strokeWidth="1.4" strokeLinecap="butt" aria-hidden="true">
+      <path d="M26.05 18.87A13.00 13.00 0 1 1 26.05 9.13" stroke="#32ADE6" />
+      <path d="M24.12 18.09A10.92 10.92 0 1 1 24.12 9.91" stroke="#00C7BE" />
+      <path d="M22.21 17.32A8.85 8.85 0 1 1 22.21 10.68" stroke="#FFCC00" />
+      <path d="M20.27 16.53A6.76 6.76 0 1 1 20.27 11.47" stroke="#FF9500" />
+      <path d="M18.34 15.75A4.68 4.68 0 1 1 18.34 12.25" stroke="#FF2D55" />
     </svg>
   );
 }
@@ -130,6 +132,19 @@ export default function Chroma() {
         </div>
       </section>
 
+      <section id="duo" className="block">
+        <div className="wrap">
+          <div className="duo-head">
+            <h2>Your pocket cinema.</h2>
+            <p className="body">On iPhone Duo, Chroma follows the fold. Start a film on the cover screen, open it up for the full picture, or stand it in laptop pose with the picture on top and the controls below.</p>
+          </div>
+          <div className="shot film">
+            <video controls playsInline preload="none" poster={`${base}/chroma/duo-film-poster.jpg`} src={`${base}/chroma/duo-film.mp4`} aria-label="Chroma on iPhone Duo: playing on the cover screen, unfolding to the full display, and in laptop pose" />
+          </div>
+          <p className="credit">Big Buck Bunny &copy; 2008 Blender Foundation and Sintel &copy; Blender Foundation, both CC BY 3.0.</p>
+        </div>
+      </section>
+
       <section id="tv" className="block">
         <div className="wrap">
           <div className="split flip">
@@ -148,7 +163,7 @@ export default function Chroma() {
       <section id="pass" className="block">
         <div className="wrap">
           <div className="panel pass">
-            <FoilTicket src={`${base}/chroma/pass.png`} alt="The gold Chroma Pass ticket" />
+            <FoilTicket src={`${base}/chroma/pass.png`} alt="The holographic Chroma Pass ticket, with the rainbow Chroma logo" />
             <h2>Chroma Pass</h2>
             <p className="body">Chroma plays five minutes of anything for free. Chroma Pass removes the limit and keeps your playback position in sync with your server.</p>
             <p className="body">Monthly or yearly with a free trial, or a one-time Lifetime purchase. Current pricing is in the app.</p>
