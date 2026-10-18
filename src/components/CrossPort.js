@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './CrossPort.css';
 
@@ -40,6 +41,45 @@ function Reader({ screen, alt, frame = 'x4-white.webp', className = '' }) {
       <img className="screen" src={img(screen)} alt={alt} />
       <img className="frame" src={img(frame)} alt="" aria-hidden="true" />
     </div>
+  );
+}
+
+// The launch film: a muted loop that plays when it scrolls into view, unless motion is reduced,
+// with a button for the sound
+function Promo() {
+  const video = useRef(null);
+  const [muted, setMuted] = useState(true);
+
+  useEffect(() => {
+    const element = video.current;
+    if (!element || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) element.play().catch(() => {});
+      else element.pause();
+    }, { threshold: 0.4 });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  function toggleSound() {
+    const element = video.current;
+    element.muted = !element.muted;
+    setMuted(element.muted);
+    if (!element.muted) {
+      element.currentTime = 0;
+      element.play().catch(() => {});
+    }
+  }
+
+  return (
+    <section className="promo">
+      <div className="wrap">
+        <div className="film">
+          <video ref={video} src={img('promo.mp4')} poster={img('promo-poster.jpg')} muted loop playsInline preload="metadata" controls={false} aria-label="CrossPort's launch film: books on the phone, read aloud, in sync with an e-reader, sent from Project Gutenberg, and wallpapers previewed in e-ink" />
+          <button type="button" className="sound" onClick={toggleSound}>{muted ? 'Sound on' : 'Sound off'}</button>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -95,6 +135,8 @@ export default function CrossPort() {
           </div>
         </div>
       </section>
+
+      <Promo />
 
       <section className="strip">
         <div className="wrap strip-row">
