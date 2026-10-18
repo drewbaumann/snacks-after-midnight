@@ -79,18 +79,18 @@ export default function CrossPort() {
       <section id="top" className="hero">
         <div className="wrap hero-grid">
           <div className="hero-copy">
-            <div className="eyebrow">For Xteink readers running CrossPoint</div>
+            <div className="eyebrow">For e-readers running CrossPoint</div>
             <h1>One library.<br />Two screens.</h1>
             <p className="lede">CrossPort is the iPhone companion for your e-reader. Send books and wallpapers to it over WiFi, read on your phone when the reader’s at home, and your place follows you back.</p>
             <div className="cta-row">
               <a href={APP_STORE} className="btn fill">Download on the App Store</a>
               <a href="#read" onClick={jump} className="btn quiet">See how it works</a>
             </div>
-            <div className="fine">Free for iPhone. Works with the Xteink X4, X3, and readers running CrossPoint-based firmware.</div>
+            <div className="fine">Free for iPhone. Works with any reader running CrossPoint or one of its community forks.</div>
           </div>
           <div className="hero-art">
             <div className="sky" />
-            <Reader screen="reader-hiker.jpg" alt="An Xteink X4 e-reader showing CrossPort's hiker carrying a pack of books" className="hero-reader" />
+            <Reader screen="reader-hiker.jpg" alt="An e-reader showing CrossPort's hiker carrying a pack of books" className="hero-reader" />
             <Phone src="book.jpg" alt="Dracula's page in CrossPort, with its cover, rating, and a Continue Reading button" className="hero-phone" />
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function CrossPort() {
             </div>
             <div>
               <h2>Made for CrossPoint.</h2>
-              <p className="body"><a href={CROSSPOINT}>CrossPoint</a> is open-source firmware for the Xteink X4 and X3. CrossPort talks to its WiFi file transfer mode, so put your reader in File Transfer mode on the same network and CrossPort finds it. Firmware based on CrossPoint works too.</p>
+              <p className="body"><a href={CROSSPOINT}>CrossPoint</a> is open-source e-reader firmware. It runs on the Xteink X4 and X3 and on other readers, and being open source, it has plenty of community forks. CrossPort works with any of them that keep CrossPoint’s WiFi file transfer: put your reader in File Transfer mode on the same network, and CrossPort finds it.</p>
             </div>
           </div>
         </div>
