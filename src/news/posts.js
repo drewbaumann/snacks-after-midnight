@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 const base = process.env.PUBLIC_URL || '';
 const CHROMA_APP_STORE = 'https://apps.apple.com/us/app/chroma-spatial-cinema/id6478800800';
+const CROSSPORT_APP_STORE = 'https://apps.apple.com/us/app/crossport/id6761747300';
 
 function Shot({ src, alt, narrow }) {
   return <img src={`${base}/news/${src}`} alt={alt} className={narrow ? 'mx-auto max-w-[300px] rounded-xl' : 'rounded-xl'} />;
@@ -9,6 +10,44 @@ function Shot({ src, alt, narrow }) {
 
 // Newest first. Each post is an app update; `body` is its full text.
 const posts = [
+  {
+    slug: 'crossport-2-7',
+    app: 'CrossPort',
+    title: 'CrossPort 2.7: a voice of its own, and ready for iPhone Duo',
+    date: '2026-10-18',
+    summary: 'Read Aloud gets a neural voice that runs on your iPhone, and can read in your own voice. Plus iPhone Duo, a demo reader, and a new home for your books.',
+    cover: 'crossport-2-7/cover.jpg',
+    body: () => (
+      <>
+        <p>CrossPort is the iPhone companion for e-readers running CrossPoint, the open-source e-reader firmware. It sends books and wallpapers to your reader over WiFi, has its own book reader on the phone, and keeps your place in sync both ways. CrossPort 2.7 is out now, and it&rsquo;s mostly about listening.</p>
+        <p><a href={CROSSPORT_APP_STORE}>Get CrossPort on the App Store</a>. It&rsquo;s free.</p>
+        <video className="w-full rounded-xl" src={`${base}/crossport/promo.mp4`} poster={`${base}/crossport/promo-poster.jpg`} controls playsInline preload="metadata" />
+
+        <h2>A new voice for Read Aloud</h2>
+        <ul>
+          <li><strong>A neural voice that runs on your iPhone.</strong> It&rsquo;s a natural-sounding voice, and since it runs on the phone, your book never leaves it. Download it free in Settings &rsaquo; Read Aloud. It reads English books; books in other languages keep the system voice.</li>
+          <li><strong>Read in your own voice.</strong> Choose Create Voice, read the passage on screen aloud for about half a minute (or import a recording), and Read Aloud reads in that voice.</li>
+          <li><strong>Now Playing</strong> and the Lock Screen show the book&rsquo;s cover and chapter while CrossPort reads.</li>
+        </ul>
+        <img src={`${base}/crossport/read-aloud.webp`} alt="CrossPort reading Pride and Prejudice aloud, with playback controls under the page" className="mx-auto max-w-[300px]" />
+
+        <h2>Ready for iPhone Duo</h2>
+        <p>Open iPhone Duo and CrossPort opens with it. Books read as two-page spreads across the inside display, like a paperback, and every screen splits into two panes at the fold, so nothing sits on the crease. Half open like a laptop, the reader keeps the page above the fold and its controls below.</p>
+        <Shot src="crossport-2-7/cover.jpg" alt="Alice's Adventures in Wonderland as a two-page spread on iPhone Duo" />
+
+        <h2>Also new</h2>
+        <ul>
+          <li><strong>Books come first.</strong> CrossPort opens on your books, for anyone who reads on the phone, and looks for your reader in the background. The second tab is Connect until your reader turns up, then Files, so connecting never moves you.</li>
+          <li><strong>No reader? Try the demo reader.</strong> Tap it on the Connect tab and CrossPort connects to a simulated reader with a book on it, so you can try sending books and wallpapers before you have the hardware.</li>
+          <li><strong>Disconnect</strong> from your reader in Settings.</li>
+          <li>Fixed the last page of a chapter sometimes showing shifted to the side.</li>
+        </ul>
+
+        <hr />
+        <p>CrossPort is on the <a href={CROSSPORT_APP_STORE}>App Store</a> for iPhone. See more on the <a href="/crossport/">CrossPort page</a>, and if you try it, <Link to="/contact">tell us what you think</Link>.</p>
+      </>
+    ),
+  },
   {
     slug: 'chroma-on-iphone-duo',
     app: 'Chroma',
