@@ -71,14 +71,16 @@
   object-fit: cover;
 }
 .crossport .reader .body { position: relative; width: 100%; }
-.crossport .hero-reader {
-  position: absolute; left: 7%; top: 64px; width: 290px;
-  transform: rotate(-4deg);
-  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.28));
-}
+/* True to scale: the X4 is about 114 x 69 mm and the 6.9" iPhone in the screenshots about 163 x 78 mm,
+   so the reader is 88% of the phone's width */
 .crossport .hero-phone {
-  position: absolute; right: 2%; top: 150px; width: 196px;
+  position: absolute; right: 9%; top: 6px; width: 236px;
   transform: rotate(3deg);
+}
+.crossport .hero-reader {
+  position: absolute; left: 12%; top: 196px; width: 208px; z-index: 1;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.3));
 }
 
 /* A phone: the screenshot in a dark bezel */
@@ -158,8 +160,8 @@
   .crossport .lede { font-size: 18px; }
   .crossport .hero-art { height: 420px; }
   .crossport .sky { inset: 16px 0; border-radius: 24px; }
-  .crossport .hero-reader { left: 5%; top: 40px; width: 210px; }
-  .crossport .hero-phone { right: 2%; top: 120px; width: 140px; }
+  .crossport .hero-phone { right: 7%; top: 8px; width: 172px; }
+  .crossport .hero-reader { left: 8%; top: 150px; width: 152px; }
   .crossport .strip-row { gap: 6px 18px; font-size: 17px; }
   .crossport .strip-row i { display: none; }
   .crossport .phone { border-radius: 30px; padding: 7px; }
