@@ -14,7 +14,7 @@ const posts = [
     app: 'Chroma',
     title: 'Chroma on iPhone Duo: your pocket cinema',
     date: '2026-10-18',
-    summary: 'Chroma follows the fold on iPhone Duo, from the cover screen to the full display to laptop pose. Chroma 2.9.7 adds a setting for the laptop-pose reflection and steadier scrubbing.',
+    summary: 'Chroma follows the fold on iPhone Duo, from the cover screen to the full display to laptop pose. Chroma 2.9.7, coming soon, adds a setting for the laptop-pose reflection and steadier scrubbing.',
     body: () => (
       <>
         <p>Hey all, Chroma has been ready for <strong>iPhone Duo</strong> since 2.9.1, and I wanted to show what that looks like. Here&rsquo;s a short film of Chroma on the Duo.</p>
@@ -30,7 +30,7 @@ const posts = [
           <li><strong>Book pose.</strong> Hold it like a book and the controls sit on the right-hand page.</li>
         </ul>
 
-        <h2>New in 2.9.7</h2>
+        <h2>Coming in 2.9.7</h2>
         <ul>
           <li><strong>Reflection Behind Controls.</strong> In Settings under Playback, choose whether that laptop-pose reflection stays on behind the player controls.</li>
           <li><strong>Steadier scrubbing.</strong> The video pauses while you drag and stays where you let go.</li>
