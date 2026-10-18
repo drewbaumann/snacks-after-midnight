@@ -1,0 +1,191 @@
+/* CrossPort: paper and ink, like the e-reader it serves, with the app icon's sky blue */
+.crossport {
+  --paper: #F4F1EA;
+  --paper-2: #EBE7DD;
+  --card: #FBFAF6;
+  --ink: #1D1D1B;
+  --ink-2: rgba(29, 29, 27, 0.7);
+  --ink-3: rgba(29, 29, 27, 0.5);
+  --line: rgba(29, 29, 27, 0.12);
+  --sky: #2D9CF0;
+  --sky-ink: #0A67B0;
+  --serif: Literata, "Iowan Old Style", Georgia, serif;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+.crossport a { color: var(--sky-ink); text-decoration: none; }
+.crossport a:hover { text-decoration: underline; }
+.crossport img { display: block; max-width: 100%; height: auto; }
+.crossport .wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+/* Navigation */
+.crossport .nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(244, 241, 234, 0.82);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--line);
+}
+.crossport .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.crossport .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-family: var(--serif); font-size: 21px; font-weight: 600; }
+.crossport .brand:hover { text-decoration: none; }
+.crossport .brand img { border-radius: 8px; }
+.crossport .nav-links { display: flex; gap: 28px; align-items: center; font-size: 14px; }
+.crossport .nav-links a { color: var(--ink-2); }
+.crossport .nav-links a.primary { color: var(--sky-ink); font-weight: 600; }
+
+/* Type */
+.crossport h1, .crossport h2 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015em; margin: 0; }
+.crossport h1 { font-size: 64px; line-height: 1.04; }
+.crossport h2 { font-size: 40px; line-height: 1.12; }
+.crossport .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sky-ink); margin-bottom: 16px; }
+.crossport .lede { font-size: 20px; line-height: 1.55; color: var(--ink-2); margin: 24px 0 32px; max-width: 520px; }
+.crossport .body { font-size: 17px; line-height: 1.6; color: var(--ink-2); margin: 20px 0 0; }
+.crossport .fine { font-size: 14px; line-height: 1.5; color: var(--ink-3); margin-top: 18px; max-width: 460px; }
+
+/* Buttons */
+.crossport .cta-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.crossport .btn { display: inline-flex; align-items: center; height: 48px; padding: 0 24px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+.crossport .btn:hover { text-decoration: none; }
+.crossport .btn.fill { background: var(--ink); color: var(--paper); }
+.crossport .btn.fill:hover { background: #000000; color: var(--paper); }
+.crossport .btn.quiet { color: var(--ink); border: 1px solid rgba(29, 29, 27, 0.2); }
+.crossport .btn.quiet:hover { background: rgba(29, 29, 27, 0.05); }
+
+/* Hero: the reader and the phone, side by side on the icon's blue */
+.crossport .hero { padding: 64px 0 88px; overflow: hidden; }
+.crossport .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.crossport .hero-art { position: relative; height: 560px; }
+.crossport .sky {
+  position: absolute; inset: 24px 0 24px 40px; border-radius: 32px;
+  background: radial-gradient(circle at 30% 20%, #5BB4F5, var(--sky) 55%, #1E86D6);
+  box-shadow: 0 40px 80px rgba(10, 103, 176, 0.25);
+}
+.crossport .reader { position: relative; }
+.crossport .reader .screen {
+  position: absolute; left: 11%; top: 5.5%; width: 77%; height: 79.8%;
+  object-fit: cover;
+}
+.crossport .reader .frame { position: relative; width: 100%; }
+/* True to scale: the X4 is about 114 x 69 mm and the 6.9" iPhone in the screenshots about 163 x 78 mm,
+   so the reader is 88% of the phone's width */
+.crossport .hero-phone {
+  position: absolute; right: 9%; top: 6px; width: 236px;
+  transform: rotate(3deg);
+}
+.crossport .hero-reader {
+  position: absolute; left: 12%; top: 196px; width: 208px; z-index: 1;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.3));
+}
+
+/* A phone: the screenshot already framed in an iPhone 17 Pro Max (from Matte's device frames) */
+.crossport .phone img { width: 100%; filter: drop-shadow(0 28px 34px rgba(29, 29, 27, 0.28)); }
+
+/* The launch film */
+.crossport .promo { padding: 0 0 88px; margin-top: -24px; }
+.crossport .film { position: relative; border-radius: 24px; overflow: hidden; background: #0E1622; box-shadow: 0 40px 80px rgba(29, 29, 27, 0.22); }
+.crossport .film video { display: block; width: 100%; aspect-ratio: 16 / 9; }
+.crossport .sound {
+  position: absolute; right: 16px; bottom: 16px; height: 36px; padding: 0 16px; border-radius: 999px; border: 0;
+  background: rgba(244, 241, 234, 0.9); color: var(--ink); font: 600 13px/1 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; cursor: pointer;
+}
+.crossport .sound:hover { background: #FFFFFF; }
+
+/* The strip under the hero */
+.crossport .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-2); }
+.crossport .strip-row {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px 22px;
+  padding-top: 22px; padding-bottom: 22px; font-family: var(--serif); font-size: 19px; color: var(--ink-2);
+}
+.crossport .strip-row i { width: 5px; height: 5px; border-radius: 50%; background: var(--sky); }
+
+/* Features: a phone beside the words */
+.crossport .feature { padding: 112px 0 0; }
+.crossport .split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 72px; align-items: center; }
+.crossport .split.flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.crossport .split.flip .art { order: 2; }
+.crossport .art { display: flex; justify-content: center; }
+.crossport .art .phone { width: 280px; }
+.crossport .copy { max-width: 520px; }
+.crossport .points { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 12px; }
+.crossport .points li { position: relative; padding-left: 26px; font-size: 16px; line-height: 1.5; color: var(--ink); }
+.crossport .points li::before {
+  content: ""; position: absolute; left: 0; top: 0.45em; width: 12px; height: 12px; border-radius: 3px;
+  background: var(--sky);
+}
+
+/* iPhone Duo */
+.crossport .duo { padding: 128px 0 0; }
+.crossport .duo-head { max-width: 640px; margin: 0 auto; text-align: center; }
+.crossport .duo-spread { width: 100%; max-width: 980px; margin: 48px auto 0; filter: drop-shadow(0 34px 40px rgba(29, 29, 27, 0.26)); }
+.crossport .duo-row { max-width: 640px; margin: 56px auto 0; }
+.crossport .duo-row img { width: 100%; filter: drop-shadow(0 26px 30px rgba(29, 29, 27, 0.24)); }
+
+/* The small things */
+.crossport .more { padding: 128px 0 0; }
+.crossport .more h2 { text-align: center; }
+.crossport .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+.crossport .card { border-radius: 20px; padding: 24px; background: var(--card); border: 1px solid var(--line); }
+.crossport .card h3 { font-family: var(--serif); font-size: 20px; font-weight: 600; line-height: 1.25; margin: 0 0 8px; }
+.crossport .card p { font-size: 15px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+
+/* Made for CrossPoint */
+.crossport .works { padding: 112px 0 0; }
+.crossport .panel {
+  display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 48px; align-items: center;
+  border-radius: 28px; padding: 48px 56px; background: var(--ink); color: var(--paper);
+}
+.crossport .panel .body { color: rgba(244, 241, 234, 0.72); }
+.crossport .panel a { color: #8CCBF7; }
+.crossport .reader.small { width: 150px; transform: rotate(-3deg); filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.5)); }
+
+/* Closing */
+.crossport .closing { padding: 128px 0; text-align: center; }
+.crossport .closing-icon { margin: 0 auto 28px; border-radius: 22px; box-shadow: 0 20px 40px rgba(10, 103, 176, 0.28); }
+.crossport .closing .cta-row { justify-content: center; margin-top: 28px; }
+
+.crossport footer { border-top: 1px solid var(--line); padding: 32px 0 48px; }
+.crossport .foot { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.crossport .foot-brand { font-size: 13px; color: var(--ink-2); }
+.crossport .foot-links { display: flex; gap: 20px; font-size: 13px; }
+.crossport .foot-links a { color: var(--ink-2); }
+
+@media (max-width: 900px) {
+  .crossport .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .crossport .hero-art { height: 500px; max-width: 520px; width: 100%; margin: 0 auto; }
+  .crossport .split, .crossport .split.flip { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .crossport .split.flip .art { order: 0; }
+  .crossport .grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .crossport .wrap { padding: 0 16px; }
+  .crossport .nav-links { gap: 16px; }
+  .crossport .nav-links .hide-sm { display: none; }
+  .crossport .hero { padding: 40px 0 64px; }
+  .crossport .film { border-radius: 16px; }
+  .crossport .promo { padding-bottom: 64px; }
+  .crossport h1 { font-size: 44px; }
+  .crossport h2 { font-size: 30px; }
+  .crossport .lede { font-size: 18px; }
+  .crossport .hero-art { height: 420px; }
+  .crossport .sky { inset: 16px 0; border-radius: 24px; }
+  .crossport .hero-phone { right: 7%; top: 8px; width: 172px; }
+  .crossport .hero-reader { left: 8%; top: 150px; width: 152px; }
+  .crossport .strip-row { gap: 6px 18px; font-size: 17px; }
+  .crossport .strip-row i { display: none; }
+  .crossport .art .phone { width: 240px; }
+  .crossport .feature { padding-top: 80px; }
+  .crossport .more, .crossport .works, .crossport .duo { padding-top: 88px; }
+  .crossport .duo-spread { margin-top: 32px; }
+  .crossport .grid3 { grid-template-columns: minmax(0, 1fr); }
+  .crossport .panel { grid-template-columns: minmax(0, 1fr); padding: 32px 24px; gap: 28px; }
+  .crossport .panel-art { display: flex; justify-content: center; }
+  .crossport .closing { padding: 96px 0; }
+  .crossport .foot { flex-direction: column; align-items: flex-start; }
+}
