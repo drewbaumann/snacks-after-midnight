@@ -10,6 +10,41 @@ function Shot({ src, alt, narrow }) {
 // Newest first. Each post is an app update; `body` is its full text.
 const posts = [
   {
+    slug: 'chroma-on-iphone-duo',
+    app: 'Chroma',
+    title: 'Chroma on iPhone Duo: your pocket cinema',
+    date: '2026-10-18',
+    summary: 'Chroma follows the fold on iPhone Duo, from the cover screen to the full display to laptop pose. Chroma 2.9.7, coming soon, adds a setting for the laptop-pose reflection and steadier scrubbing.',
+    body: () => (
+      <>
+        <p>Hey all, Chroma has been ready for <strong>iPhone Duo</strong> since 2.9.1, and I wanted to show what that looks like. Here&rsquo;s a short film of Chroma on the Duo.</p>
+        <video className="w-full rounded-xl" controls playsInline preload="none" poster={`${base}/chroma/duo-film-poster.jpg`} src={`${base}/chroma/duo-film.mp4`} aria-label="Chroma on iPhone Duo: playing on the cover screen, unfolding to the full display, and in laptop pose" />
+        <p className="text-sm opacity-60">Big Buck Bunny &copy; 2008 Blender Foundation and Sintel &copy; Blender Foundation, both CC BY 3.0.</p>
+        <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for iPhone, iPad, Apple Vision Pro, and Apple TV.</p>
+
+        <h2>Chroma follows the fold</h2>
+        <ul>
+          <li><strong>Cover screen.</strong> Browse your library and start something with the phone closed.</li>
+          <li><strong>Open.</strong> Unfold it and the same film carries on across the full display, in either orientation.</li>
+          <li><strong>Laptop pose.</strong> Stand it half open and the picture moves to the top half with the controls below, while a soft reflection of the film glows on the lower half.</li>
+          <li><strong>Book pose.</strong> Hold it like a book and the controls sit on the right-hand page.</li>
+        </ul>
+
+        <h2>Coming in 2.9.7</h2>
+        <ul>
+          <li><strong>Reflection Behind Controls.</strong> In Settings under Playback, choose whether that laptop-pose reflection stays on behind the player controls.</li>
+          <li><strong>Steadier scrubbing.</strong> The video pauses while you drag and stays where you let go.</li>
+          <li><strong>AirPlay.</strong> While you AirPlay, your iPhone shows an AirPlay screen and works as a remote.</li>
+        </ul>
+
+        <h2>Take it on a plane</h2>
+        <p>Downloads play with no connection, subtitles included, and when you&rsquo;re back online your spot syncs back to Plex, Jellyfin, or Emby, so you can pick up on any screen.</p>
+
+        <p>I&rsquo;d love to hear what you think on r/ChromaApp.</p>
+      </>
+    ),
+  },
+  {
     slug: 'midnight-woods',
     app: 'Chroma',
     title: 'Midnight Woods: a Halloween environment on Vision Pro',

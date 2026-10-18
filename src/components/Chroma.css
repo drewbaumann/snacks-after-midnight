@@ -88,7 +88,10 @@
 
 .chroma .panel { border-radius: 24px; border: 1px solid var(--line); padding: 48px; overflow: hidden; }
 .chroma .panel.next { background: radial-gradient(circle at 20% 0%, var(--iris), var(--surface) 65%); }
-.chroma .panel.pass { border-color: rgba(201, 164, 92, 0.3); background: radial-gradient(circle at 50% 0%, #2A2117, var(--surface) 70%); text-align: center; }
+.chroma .panel.pass { border-color: rgba(190, 200, 235, 0.28); background: radial-gradient(circle at 50% 0%, #1E2233, var(--surface) 70%); text-align: center; }
+.chroma .duo-head { max-width: 720px; margin-bottom: 40px; }
+.chroma .film video { display: block; width: 100%; height: auto; background: #000; }
+.chroma .credit { font-size: 13px; color: var(--text-2); margin-top: 12px; }
 .chroma .phone-wrap { display: flex; justify-content: center; }
 .chroma .phone {
   width: 240px; border-radius: 28px; border: 1px solid rgba(255, 255, 255, 0.14);
