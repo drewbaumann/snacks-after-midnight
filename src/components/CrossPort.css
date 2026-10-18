@@ -123,9 +123,8 @@
 .crossport .duo { padding: 128px 0 0; }
 .crossport .duo-head { max-width: 640px; margin: 0 auto; text-align: center; }
 .crossport .duo-spread { width: 100%; max-width: 980px; margin: 48px auto 0; filter: drop-shadow(0 34px 40px rgba(29, 29, 27, 0.26)); }
-.crossport .duo-row { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 48px; align-items: center; max-width: 980px; margin: 56px auto 0; }
+.crossport .duo-row { max-width: 640px; margin: 56px auto 0; }
 .crossport .duo-row img { width: 100%; filter: drop-shadow(0 26px 30px rgba(29, 29, 27, 0.24)); }
-.crossport .duo-row .body { margin: 0; }
 
 /* The small things */
 .crossport .more { padding: 128px 0 0; }
@@ -162,7 +161,6 @@
   .crossport .split, .crossport .split.flip { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .crossport .split.flip .art { order: 0; }
   .crossport .grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .crossport .duo-row { grid-template-columns: minmax(0, 1fr); gap: 24px; }
 }
 
 @media (max-width: 640px) {

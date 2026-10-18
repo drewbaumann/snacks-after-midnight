@@ -206,7 +206,6 @@ export default function CrossPort() {
           <img className="duo-spread" src={img('duo-spread-alice.webp')} alt="Alice's Adventures in Wonderland as a two-page spread on iPhone Duo's inside display" loading="lazy" />
           <div className="duo-row">
             <img src={img('duo-detail.webp')} alt="Dracula's page on iPhone Duo, with the cover and Continue Reading on one side of the fold and the chapter and synopsis on the other" loading="lazy" />
-            <p className="body">Every screen uses both halves, with nothing sitting on the fold: a book’s cover and the button to keep reading on one side, its chapter and synopsis on the other.</p>
           </div>
         </div>
       </section>
