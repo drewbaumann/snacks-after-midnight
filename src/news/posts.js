@@ -56,7 +56,7 @@ const posts = [
     summary: 'Chroma follows the fold on iPhone Duo, from the cover screen to the full display to laptop pose. Chroma 2.9.7 is out now with CarPlay, a setting for the laptop-pose reflection, and steadier scrubbing.',
     body: () => (
       <>
-        <p>Hey all, Chroma has been ready for <strong>iPhone Duo</strong> since 2.9.1, and I wanted to show what that looks like. Here&rsquo;s a short film of Chroma on the Duo.</p>
+        <p>Chroma has been ready for <strong>iPhone Duo</strong> since 2.9.1, and now that 2.9.7 is out, it seemed like a good time to show what that looks like. Here&rsquo;s a short film of Chroma on the Duo.</p>
         <video className="w-full rounded-xl" controls playsInline preload="none" poster={`${base}/chroma/duo-film-poster.jpg`} src={`${base}/chroma/duo-film.mp4`} aria-label="Chroma on iPhone Duo: playing on the cover screen, unfolding to the full display, and in laptop pose" />
         <p className="text-sm opacity-60">Big Buck Bunny &copy; 2008 Blender Foundation and Sintel &copy; Blender Foundation, both CC BY 3.0.</p>
         <p><a href={CHROMA_APP_STORE}>Get Chroma on the App Store</a> for iPhone, iPad, Apple Vision Pro, and Apple TV.</p>
