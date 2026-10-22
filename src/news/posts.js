@@ -77,9 +77,6 @@ const posts = [
           <li><strong>AirPlay.</strong> While you AirPlay, your iPhone shows an AirPlay screen and works as a remote.</li>
         </ul>
 
-        <h2>Take it on a plane</h2>
-        <p>Downloads play with no connection, subtitles included, and when you&rsquo;re back online your spot syncs back to Plex, Jellyfin, or Emby, so you can pick up on any screen.</p>
-
         <p>I&rsquo;d love to hear what you think on r/ChromaApp.</p>
       </>
     ),
