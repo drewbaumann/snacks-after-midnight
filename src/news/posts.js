@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 const base = process.env.PUBLIC_URL || '';
 const CHROMA_APP_STORE = 'https://apps.apple.com/us/app/chroma-spatial-cinema/id6478800800';
 const CROSSPORT_APP_STORE = 'https://apps.apple.com/us/app/crossport/id6761747300';
+const CHROMA_SUBREDDIT = 'https://www.reddit.com/r/ChromaApp/';
 
 function Shot({ src, alt, narrow }) {
   return <img src={`${base}/news/${src}`} alt={alt} className={narrow ? 'mx-auto max-w-[300px] rounded-xl' : 'rounded-xl'} />;
@@ -77,7 +78,7 @@ const posts = [
           <li><strong>AirPlay.</strong> While you AirPlay, your iPhone shows an AirPlay screen and works as a remote.</li>
         </ul>
 
-        <p>I&rsquo;d love to hear what you think on r/ChromaApp.</p>
+        <p>I&rsquo;d love to hear what you think on <a href={CHROMA_SUBREDDIT}>r/ChromaApp</a>.</p>
       </>
     ),
   },
@@ -114,7 +115,7 @@ const posts = [
         </ul>
 
         <h2>Thank you</h2>
-        <p>Thanks to everyone who sends in ideas on r/ChromaApp, and to Carter, as always. Happy Halloween!</p>
+        <p>Thanks to everyone who sends in ideas on <a href={CHROMA_SUBREDDIT}>r/ChromaApp</a>, and to Carter, as always. Happy Halloween!</p>
       </>
     ),
   },
@@ -170,7 +171,7 @@ const posts = [
         </ul>
 
         <h2>Thank you</h2>
-        <p>Thanks to the r/ChromaApp folks who asked for collections on Home, and to Carter, whose work keeps lifting every release.</p>
+        <p>Thanks to the <a href={CHROMA_SUBREDDIT}>r/ChromaApp</a> folks who asked for collections on Home, and to Carter, whose work keeps lifting every release.</p>
       </>
     ),
   },
