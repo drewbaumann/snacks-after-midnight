@@ -15,9 +15,9 @@ export default function Terms() {
 
 <p>The “Service” means (a) the snacksaftermidnight.com website (the “Site”), (b) the Chroma - Spatial Cinema application, (c) the CrossPort companion application for the CrossPoint X4 e-reader, and (d) all software (including the Software, as defined below), applications, data, text, images, and other content made available by or on behalf of Snacks After Midnight. Any modifications to the Service are also subject to these Terms. Snacks After Midnight reserves the right to modify or discontinue the Service or any feature or functionality thereof at any time without notice. All rights, title and interest in and to the Service will remain with and belong exclusively to Snacks After Midnight.</p>
 
-<h2 id="free-use">Free Use and the Preview Limit</h2>
+<h2 id="free-use">Free Use and the Watch Limit</h2>
 
-<p>Chroma may be used without a purchase. Without Chroma Pass, playback of a title is limited to a preview period, after which playback stops and you are invited to purchase. The rest of the app, including adding your servers and browsing your libraries, remains available.</p>
+<p>Chroma may be used without a purchase. Without Chroma Pass, total watch time is limited to a free allowance. Once it is used, playback stops and you are invited to purchase. The rest of the app, including adding your servers and browsing your libraries, remains available.</p>
 
 <h2 id="chroma-pass">Chroma Pass</h2>
 

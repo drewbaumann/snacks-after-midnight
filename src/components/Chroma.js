@@ -165,7 +165,7 @@ export default function Chroma() {
           <div className="panel pass">
             <FoilTicket src={`${base}/chroma/pass.png`} alt="The holographic Chroma Pass ticket, with the rainbow Chroma logo" />
             <h2>Chroma Pass</h2>
-            <p className="body">Chroma plays five minutes of anything for free. Chroma Pass removes the limit and keeps your playback position in sync with your server.</p>
+            <p className="body">Chroma includes four hours of free watching. Chroma Pass removes the limit and unlocks everything else Chroma can do.</p>
             <p className="body">Monthly or yearly with a free trial, or a one-time Lifetime purchase. Current pricing is in the app.</p>
           </div>
         </div>
